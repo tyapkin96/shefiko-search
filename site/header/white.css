@@ -1,11 +1,11 @@
 /* Вариант «белые плашки»: белые плашки с тёмным текстом на любом фоне */
-:is(#rec1656705211,#rec1656713361) .t396__elem[data-elem-type="button"]:not([data-elem-id="1753355192457"]) .tn-atom{ color:#1C1D1B !important; }
+:is(#rec1656705211,#rec1656713361) .t396__elem[data-elem-type="button"]:not([data-elem-id="1753355192457"]) :is(.tn-atom,.tn-atom *){ color:#1C1D1B !important; }
 :is(#rec1656705211,#rec1656713361) .t396__elem[data-elem-type="button"]:not([data-elem-id="1753355192457"]) .tn-atom::before{
   background:rgba(255,255,255,.95); border:1px solid rgba(255,255,255,.9); box-shadow:0 8px 24px rgba(0,0,0,.18);
 }
 #rec1656713361 .t396__elem[data-elem-type="button"]:not([data-elem-id="1753355192457"]) .tn-atom::before{ border-color:rgba(28,29,27,.1); box-shadow:0 6px 18px rgba(28,29,27,.08); }
 :is(#rec1656705211,#rec1656713361) .t396__elem[data-elem-type="button"]:not([data-elem-id="1753355192457"]) .tn-atom:hover::before{ background:#EAF2DA; }
-:is(#rec1656705211,#rec1656713361) .t396__elem[data-elem-id="1753355192439"] .tn-atom{ color:#1C1D1B !important; }
+:is(#rec1656705211,#rec1656713361) .t396__elem[data-elem-id="1753355192439"] :is(.tn-atom,.tn-atom *){ color:#1C1D1B !important; }
 :is(#rec1656705211,#rec1656713361) .t396__elem[data-elem-id="1753355192439"] .tn-atom::before{ background:#fff; border:1px solid rgba(255,255,255,.9); box-shadow:0 8px 24px rgba(0,0,0,.18); }
 #rec1656713361 .t396__elem[data-elem-id="1753355192439"] .tn-atom::before{ border-color:rgba(28,29,27,.1); box-shadow:0 6px 18px rgba(28,29,27,.08); }
 :is(#rec1656705211,#rec1656713361) .t396__elem[data-elem-id="1753355192439"] .tn-atom:hover::before{ background:#EAF2DA; }
@@ -15,3 +15,6 @@
 :is(#rec1656705211,#rec1656713361) .t838__input::placeholder{ color:rgba(28,29,27,.6) !important; opacity:1 !important; }
 :is(#rec1656705211,#rec1656713361) .t396__elem:is([data-elem-id="1753355192509"],[data-elem-id="1753355192551"]) .tn-atom{ background:#fff !important; border:1px solid rgba(255,255,255,.9) !important; box-shadow:0 10px 30px rgba(0,0,0,.22) !important; }
 #rec1656713361 .t396__elem:is([data-elem-id="1753355192509"],[data-elem-id="1753355192551"]) .tn-atom{ border-color:rgba(28,29,27,.1) !important; box-shadow:0 6px 18px rgba(28,29,27,.08) !important; }
+
+/* значок скачивания — тёмный */
+:is(#rec1656705211,#rec1656713361) .t396__elem[data-elem-id="1753356021400"] :is(.tn-atom,.tn-atom__img){ filter:brightness(0) !important; }

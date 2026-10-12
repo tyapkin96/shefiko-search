@@ -1,11 +1,11 @@
 /* Вариант «стекло»: на фото — светлое матовое стекло, на белых страницах — светло-серые плашки */
-#rec1656705211 .t396__elem[data-elem-type="button"]:not([data-elem-id="1753355192457"]) .tn-atom{ color:#fff !important; text-shadow:0 1px 8px rgba(0,0,0,.45); }
+#rec1656705211 .t396__elem[data-elem-type="button"]:not([data-elem-id="1753355192457"]) :is(.tn-atom,.tn-atom *){ color:#fff !important; text-shadow:0 1px 8px rgba(0,0,0,.45); }
 #rec1656705211 .t396__elem[data-elem-type="button"]:not([data-elem-id="1753355192457"]) .tn-atom::before{
-  background:rgba(255,255,255,.17); border:1px solid rgba(255,255,255,.32);
+  background:rgba(255,255,255,.22); border:1px solid rgba(255,255,255,.38);
   -webkit-backdrop-filter:blur(14px) saturate(140%); backdrop-filter:blur(14px) saturate(140%); box-shadow:0 6px 20px rgba(0,0,0,.25);
 }
 #rec1656705211 .t396__elem[data-elem-type="button"]:not([data-elem-id="1753355192457"]) .tn-atom:hover::before{ background:rgba(255,255,255,.3); }
-#rec1656705211 .t396__elem[data-elem-id="1753355192439"] .tn-atom{ color:#fff !important; text-shadow:0 1px 8px rgba(0,0,0,.45); }
+#rec1656705211 .t396__elem[data-elem-id="1753355192439"] :is(.tn-atom,.tn-atom *){ color:#fff !important; text-shadow:0 1px 8px rgba(0,0,0,.45); }
 #rec1656705211 .t396__elem[data-elem-id="1753355192439"] .tn-atom::before{
   background:rgba(255,255,255,.17); border:1px solid rgba(255,255,255,.4); -webkit-backdrop-filter:blur(14px); backdrop-filter:blur(14px); box-shadow:0 6px 20px rgba(0,0,0,.25);
 }
@@ -21,13 +21,16 @@
   background:rgba(255,255,255,.94) !important; border:1px solid rgba(255,255,255,.9) !important; box-shadow:0 10px 30px rgba(0,0,0,.3) !important;
 }
 /* белые страницы */
-#rec1656713361 .t396__elem[data-elem-type="button"]:not([data-elem-id="1753355192457"]) .tn-atom{ color:#1C1D1B !important; }
+#rec1656713361 .t396__elem[data-elem-type="button"]:not([data-elem-id="1753355192457"]) :is(.tn-atom,.tn-atom *){ color:#1C1D1B !important; }
 #rec1656713361 .t396__elem[data-elem-type="button"]:not([data-elem-id="1753355192457"]) .tn-atom::before{ background:rgba(28,29,27,.045); border:1px solid rgba(28,29,27,.1); }
 #rec1656713361 .t396__elem[data-elem-type="button"]:not([data-elem-id="1753355192457"]) .tn-atom:hover::before{ background:rgba(127,166,74,.16); border-color:rgba(127,166,74,.5); }
-#rec1656713361 .t396__elem[data-elem-id="1753355192439"] .tn-atom{ color:#1C1D1B !important; }
+#rec1656713361 .t396__elem[data-elem-id="1753355192439"] :is(.tn-atom,.tn-atom *){ color:#1C1D1B !important; }
 #rec1656713361 .t396__elem[data-elem-id="1753355192439"] .tn-atom::before{ background:rgba(127,166,74,.14); border:1px solid rgba(127,166,74,.5); }
 #rec1656713361 .t396__elem[data-elem-id="1753355192439"] .tn-atom:hover::before{ background:rgba(127,166,74,.26); }
 #rec1656713361 .t396__elem[data-elem-id="1753355192462"] .tn-atom{ background:#F3F2EE !important; border:1px solid rgba(28,29,27,.08) !important; }
 #rec1656713361 .t838__input{ color:#1C1D1B !important; }
 #rec1656713361 .t838__input::placeholder{ color:rgba(28,29,27,.6) !important; opacity:1 !important; }
 #rec1656713361 .t396__elem:is([data-elem-id="1753355192509"],[data-elem-id="1753355192551"]) .tn-atom{ background:#fff !important; border:1px solid rgba(28,29,27,.1) !important; box-shadow:0 6px 18px rgba(28,29,27,.07) !important; }
+
+/* значок скачивания на тёмной фотографии — белый */
+#rec1656705211 .t396__elem[data-elem-id="1753356021400"] :is(.tn-atom,.tn-atom__img){ filter:brightness(0) invert(1) !important; }
