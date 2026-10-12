@@ -41,3 +41,6 @@
 /* меню не должно быть полупрозрачным */
 :is(#rec1656705211,#rec1656713361) .t396__elem[data-elem-type="button"]:not([data-elem-id="1753355192457"]),
 :is(#rec1656705211,#rec1656713361) .t396__elem[data-elem-type="button"]:not([data-elem-id="1753355192457"]) .tn-atom{ opacity:1 !important; }
+/* поиск, корзина и профиль без полупрозрачности */
+:is(#rec1656705211,#rec1656713361) .t396__elem:is([data-elem-id="1753355192462"],[data-elem-id="1753355192509"],[data-elem-id="1753355192551"]),
+:is(#rec1656705211,#rec1656713361) .t396__elem:is([data-elem-id="1753355192462"],[data-elem-id="1753355192509"],[data-elem-id="1753355192551"]) .tn-atom{ opacity:1 !important; }
