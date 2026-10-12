@@ -1,0 +1,355 @@
+{
+ "desktop": {
+  "tLoad": 15472,
+  "perf": {
+   "lcp": 8034,
+   "cls": 0,
+   "dcl": 6738,
+   "load": 15468
+  },
+  "info": {
+   "title": "ШЕФиКО | Свежие продукты для кафе, ресторанов и производств Москвы и области - от одного поставщика с доставкой на следующий день",
+   "h1": [
+    "Свежие продукты для кафе,\nресторанов и производств Москвы и области - от одного "
+   ],
+   "h2count": 0,
+   "description": "Свежие продукты для кафе, ресторанов и фабрик готовой еды с доставкой на следующий день по Москве и области",
+   "ogImage": "https://static.tildacdn.com/tild6535-3135-4633-b330-393436666664/__4x.png",
+   "ogTitle": "ШЕФиКО | Свежие продукты для кафе,\nресторанов и производств Москвы и области - от одного поставщика с доставкой на следующий день",
+   "viewport": "width=device-width, initial-scale=1.0",
+   "canonical": "https://shefiko.ru/",
+   "lang": "ru",
+   "images": 77,
+   "imgNoAlt": 40,
+   "zeroBlocks": 14,
+   "tilda": {
+    "t396": 14,
+    "records": 50
+   },
+   "scrollHeight": 5956,
+   "fonts": [
+    "\"Times New Roman\"",
+    "Inter",
+    "Arial"
+   ],
+   "gsap": "object",
+   "scrollTrigger": "function",
+   "links": 119,
+   "buttons": 21,
+   "htmlBytes": 1272843,
+   "nav": [
+    "О компании",
+    "Каталог продукции",
+    "Доставка и оплата",
+    "Контакты",
+    "Регистрация",
+    "Скачать прайс",
+    "Посмотреть документ",
+    "Консервация",
+    "Весь каталог",
+    "Сделать первый заказ",
+    "8 (966) 157-46-61",
+    "Запросить документы",
+    "персональных данных",
+    "Мясо и птица",
+    "Рыба и морепродукты",
+    "Яйцо и яичная продукция",
+    "Молочная гастрономия",
+    "Фрукты, овощи, грибы и зелень",
+    "Мука и товары для выпечки",
+    "Соль, сахар, специи и бульоны"
+   ]
+  },
+  "requests": 339,
+  "totalBytesKnown": 6313671,
+  "byType": {
+   "document": {
+    "n": 3,
+    "bytes": 565
+   },
+   "script": {
+    "n": 46,
+    "bytes": 194912
+   },
+   "stylesheet": {
+    "n": 21,
+    "bytes": 1889
+   },
+   "font": {
+    "n": 6,
+    "bytes": 304144
+   },
+   "image": {
+    "n": 128,
+    "bytes": 1592721
+   },
+   "fetch": {
+    "n": 124,
+    "bytes": 4217208
+   },
+   "xhr": {
+    "n": 9,
+    "bytes": 2189
+   },
+   "other": {
+    "n": 1,
+    "bytes": 0
+   },
+   "ping": {
+    "n": 1,
+    "bytes": 43
+   }
+  },
+  "big": [
+   [
+    272953,
+    "https://aqua21vek.ru/files/brand/photo_big_6a16aa68a46b4.png"
+   ],
+   [
+    256355,
+    "https://static.tildacdn.com/tild3161-6264-4365-a636-626538313565/bitmap.png"
+   ]
+  ],
+  "bad": [],
+  "errs": [
+   "Unexpected token '<'",
+   "Failed to execute 'getComputedStyle' on 'Window': parameter 1 is not of type 'Element'.",
+   "Failed to execute 'getComputedStyle' on 'Window': parameter 1 is not of type 'Element'."
+  ],
+  "cons": [
+   "[GroupMarkerNotSet(crbug.com/242999)!:A0301C00EC300000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader flag to opt in to lower security guarantees ",
+   "[.WebGL-0x3d6c01f09400]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels",
+   "[GroupMarkerNotSet(crbug.com/242999)!:A0601C00EC300000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader flag to opt in to lower security guarantees ",
+   "lazy loading err",
+   "lazy loading err",
+   "lazy loading err",
+   "lazy loading err",
+   "[.WebGL-0x3d6c01f09400]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels",
+   "[.WebGL-0x3d6c01f09400]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels",
+   "[.WebGL-0x3d6c01f09400]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels (this message will no longer repeat)"
+  ],
+  "sections": [
+   "rec1656704121 t360 h0 ",
+   "rec1656705211 t396 h0 О компании Каталог продукции Доставка и оплата Контакты Регистрация В корзине: 0 шт. Катал",
+   "rec1181687576 t396 h781 Свежие продукты для кафе, ресторанов и производств Москвы и области - от одного поставщика",
+   "rec1181746166 t396 h503 Все кухни мира — в одном месте Русская, европейская, итальянская, паназиатская — всё для в",
+   "rec1181767201 t396 h1074 Более 1 000 наименований в каталоге Мясо и птица Фрукты, овощи, грибы и зелень Консервация",
+   "rec1181872146 t396 h0 Орехи и сухофрукты Сыры Мясная гастрономия Непродоволь- ственные товары Напитки Продукция ",
+   "rec1181862091 t396 h75 Скачать прайс",
+   "rec1185084886 t396 h54 ",
+   "rec4276894201 t131 h213 Популярные бренды",
+   "rec4449895501 t131 h0 ",
+   "rec1181903041 t396 h481 Уже более 5 лет мы обсуживаем клиентов от пекарен и кафе до fine dining Главное в нашем по",
+   "rec1181939976 t396 h650 Всегда свежая продукция Товар не залеживается на складе. Все позиции обновляются регулярно",
+   "rec1181960346 t396 h659 Сделайте первый заказ и оцените удобство работы Оставьте заявку, мы свяжемся с вами, уточн",
+   "rec1182124861 t396 h120 Условия оплаты и доставки",
+   "rec1182129806 t668 h477 Как осуществляется доставка? Как оформить заказ? Можно ли получить отсрочку по оплате? Что",
+   "rec1182263836 t396 h868 Остались вопросы? Позвоните, напишите или оставьте заявку: ответим быстро ТЕЛЕФОН EMAIL TE",
+   "rec1182974686 t131 h0 ",
+   "rec1182970061 t131 h0 ",
+   "rec1656707611 t131 h0 ",
+   "rec1656707111 t131 h0 ",
+   "rec1185019096 t131 h0 ",
+   "rec1190282886 t131 h0 ",
+   "rec1183023556 t131 h0 ",
+   "rec1190232516 t131 h0 ",
+   "rec1184416221 t270 h0 ",
+   "rec4214386201 t1093 h0 ",
+   "rec1184418811 t702 h0 ",
+   "rec4228290601 t702 h0 ",
+   "rec1184419141 t886 h0 Чтобы улучшить работу сайта, повысить его эффективность и удобство мы используем файлы coo",
+   "rec1184419621 t450 h0 О компании Каталог продукции Доставка и оплата Контакты Регистрация Сделать заказ Скачать ",
+   "rec1184726621 t985 h0 ",
+   "rec1184981406 t396 h0  #rec1184981406 .t396__artboard{height:518px;}#rec1184981406 .t396__filter{height:518px;}#",
+   "rec1184981306 t131 h0 ",
+   "rec1184996936 t131 h0 ",
+   "rec1657518171 t131 h0 ",
+   "rec1185589086 t706 h0 ",
+   "rec1185589156 t131 h0 ",
+   "rec1813635161 t131 h0 ",
+   "rec1823744751 t131 h0 ",
+   "rec1814075231 t702 h0 ",
+   "rec1814119001 t390 h0 ",
+   "rec1814063441 t131 h0 ",
+   "rec1814173431 t131 h0 ",
+   "rec4684372901 t131 h0 ",
+   "rec4684428401 t131 h0 ",
+   "rec4684431301 t131 h0 ",
+   "rec4684436201 t131 h0 ",
+   "rec4704476901 t131 h0 "
+  ]
+ },
+ "mobile": {
+  "tLoad": 4984,
+  "perf": {
+   "lcp": 2419,
+   "cls": 0,
+   "dcl": 1391,
+   "load": 4981
+  },
+  "info": {
+   "title": "ШЕФиКО | Свежие продукты для кафе, ресторанов и производств Москвы и области - от одного поставщика с доставкой на следующий день",
+   "h1": [
+    "Свежие продукты для кафе,\nресторанов и производств Москвы и области - от одного "
+   ],
+   "h2count": 0,
+   "description": "Свежие продукты для кафе, ресторанов и фабрик готовой еды с доставкой на следующий день по Москве и области",
+   "ogImage": "https://static.tildacdn.com/tild6535-3135-4633-b330-393436666664/__4x.png",
+   "ogTitle": "ШЕФиКО | Свежие продукты для кафе,\nресторанов и производств Москвы и области - от одного поставщика с доставкой на следующий день",
+   "viewport": "width=device-width, initial-scale=1.0",
+   "canonical": "https://shefiko.ru/",
+   "lang": "ru",
+   "images": 77,
+   "imgNoAlt": 40,
+   "zeroBlocks": 14,
+   "tilda": {
+    "t396": 14,
+    "records": 50
+   },
+   "scrollHeight": 4890,
+   "fonts": [
+    "\"Times New Roman\"",
+    "Inter",
+    "Arial"
+   ],
+   "gsap": "object",
+   "scrollTrigger": "function",
+   "links": 119,
+   "buttons": 21,
+   "htmlBytes": 1282085,
+   "nav": [
+    "О компании",
+    "Каталог продукции",
+    "Доставка и оплата",
+    "Контакты",
+    "Регистрация",
+    "Скачать прайс",
+    "Посмотреть документ",
+    "Консервация",
+    "Весь каталог",
+    "Сделать первый заказ",
+    "8 (966) 157-46-61",
+    "Запросить документы",
+    "персональных данных",
+    "Мясо и птица",
+    "Рыба и морепродукты",
+    "Яйцо и яичная продукция",
+    "Молочная гастрономия",
+    "Фрукты, овощи, грибы и зелень",
+    "Мука и товары для выпечки",
+    "Соль, сахар, специи и бульоны"
+   ]
+  },
+  "requests": 325,
+  "totalBytesKnown": 5445938,
+  "byType": {
+   "document": {
+    "n": 3,
+    "bytes": 565
+   },
+   "stylesheet": {
+    "n": 21,
+    "bytes": 1889
+   },
+   "script": {
+    "n": 47,
+    "bytes": 194912
+   },
+   "image": {
+    "n": 127,
+    "bytes": 1656513
+   },
+   "font": {
+    "n": 6,
+    "bytes": 304144
+   },
+   "fetch": {
+    "n": 112,
+    "bytes": 3285769
+   },
+   "other": {
+    "n": 1,
+    "bytes": 0
+   },
+   "xhr": {
+    "n": 8,
+    "bytes": 2146
+   }
+  },
+  "big": [
+   [
+    272953,
+    "https://aqua21vek.ru/files/brand/photo_big_6a16aa68a46b4.png"
+   ],
+   [
+    256355,
+    "https://static.tildacdn.com/tild3161-6264-4365-a636-626538313565/bitmap.png"
+   ]
+  ],
+  "bad": [],
+  "errs": [
+   "Unexpected token '<'",
+   "Failed to execute 'getComputedStyle' on 'Window': parameter 1 is not of type 'Element'.",
+   "Failed to execute 'getComputedStyle' on 'Window': parameter 1 is not of type 'Element'.",
+   "t396_doResize is not defined"
+  ],
+  "cons": [
+   "[GroupMarkerNotSet(crbug.com/242999)!:A0E0B306EC300000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader flag to opt in to lower security guarantees ",
+   "[GroupMarkerNotSet(crbug.com/242999)!:A010B406EC300000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader flag to opt in to lower security guarantees ",
+   "lazy loading err",
+   "lazy loading err",
+   "lazy loading err",
+   "lazy loading err"
+  ],
+  "sections": [
+   "rec1656704121 t360 h0 ",
+   "rec1656705211 t396 h0 В корзине: 0 шт. Каталог Поиск по названию",
+   "rec1181687576 t396 h460 Свежие продукты для кафе, ресторанов и производств Москвы и области - от одного поставщика",
+   "rec1181746166 t396 h615 Все кухни мира — в одном месте Русская, европейская, итальянская, паназиатская — всё для в",
+   "rec1181767201 t396 h621 Более 1 000 наименований в каталоге Мясо и птица Фрукты, овощи, грибы и зелень Консервация",
+   "rec1181872146 t396 h0 Орехи и сухофрукты Сыры Мясная гастрономия Непродоволь- ственные товары Напитки Продукция ",
+   "rec1181862091 t396 h39 Скачать прайс",
+   "rec1185084886 t396 h17 ",
+   "rec4276894201 t131 h162 Популярные бренды",
+   "rec4449895501 t131 h0 ",
+   "rec1181903041 t396 h442 Уже более 5 лет мы обсуживаем клиентов от пекарен и кафе до fine dining Главное в нашем по",
+   "rec1181939976 t396 h748 Всегда свежая продукция Товар не залеживается на складе. Все позиции обновляются регулярно",
+   "rec1181960346 t396 h542 Сделайте первый заказ и оцените удобство работы Оставьте заявку, мы свяжемся с вами, уточн",
+   "rec1182124861 t396 h96 Условия оплаты и доставки",
+   "rec1182129806 t668 h409 Как осуществляется доставка? Как оформить заказ? Можно ли получить отсрочку по оплате? Что",
+   "rec1182263836 t396 h738 Остались вопросы? Позвоните, напишите или оставьте заявку: ответим быстро ТЕЛЕФОН EMAIL TE",
+   "rec1182974686 t131 h0 ",
+   "rec1182970061 t131 h0 ",
+   "rec1656707611 t131 h0 ",
+   "rec1656707111 t131 h0 ",
+   "rec1185019096 t131 h0 ",
+   "rec1190282886 t131 h0 ",
+   "rec1183023556 t131 h0 ",
+   "rec1190232516 t131 h0 ",
+   "rec1184416221 t270 h0 ",
+   "rec4214386201 t1093 h0 ",
+   "rec1184418811 t702 h0 ",
+   "rec4228290601 t702 h0 ",
+   "rec1184419141 t886 h0 Чтобы улучшить работу сайта, повысить его эффективность и удобство мы используем файлы coo",
+   "rec1184419621 t450 h0 О компании Каталог продукции Доставка и оплата Контакты Регистрация Сделать заказ Скачать ",
+   "rec1184726621 t985 h0 ",
+   "rec1184981406 t396 h0  #rec1184981406 .t396__artboard{height:518px;}#rec1184981406 .t396__filter{height:518px;}#",
+   "rec1184981306 t131 h0 ",
+   "rec1184996936 t131 h0 ",
+   "rec1657518171 t131 h0 ",
+   "rec1185589086 t706 h0 ",
+   "rec1185589156 t131 h0 ",
+   "rec1813635161 t131 h0 ",
+   "rec1823744751 t131 h0 ",
+   "rec1814075231 t702 h0 ",
+   "rec1814119001 t390 h0 ",
+   "rec1814063441 t131 h0 ",
+   "rec1814173431 t131 h0 ",
+   "rec4684372901 t131 h0 ",
+   "rec4684428401 t131 h0 ",
+   "rec4684431301 t131 h0 ",
+   "rec4684436201 t131 h0 ",
+   "rec4704476901 t131 h0 "
+  ]
+ }
+}
