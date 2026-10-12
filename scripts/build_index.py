@@ -144,6 +144,8 @@ def main():
         names.update({k: v[0] for k, v in pn.items()})
         try:
             got = fetch_part(uid)
+            for p in got.values():
+                p["_top"] = uid
             products.update(got)
             diag.append({"uid": uid, "title": pn.get(uid, ("", None))[0], "expected": pn.get(uid, ("", None))[1], "fetched": len(got)})
         except Exception as e:
@@ -154,9 +156,15 @@ def main():
         title = (p.get("title") or "").strip()
         if not title:
             continue
-        pu = [str(x) for x in (p.get("partuids") or [])]
+        raw = p.get("partuids")
+        if isinstance(raw, str):
+            pu = re.findall(r"\d{9,}", raw)
+        else:
+            pu = [str(x) for x in (raw or [])]
         if not pu and isinstance(p.get("parts"), list):
             pu = [str(x.get("id", x)) if isinstance(x, dict) else str(x) for x in p["parts"]]
+        if p.get("_top") and p["_top"] not in pu:
+            pu.insert(0, p["_top"])
         cat_text = " ".join(dict.fromkeys(names.get(x, "") for x in pu if names.get(x)))
         if cat_text not in ci:
             ci[cat_text] = len(cats)
