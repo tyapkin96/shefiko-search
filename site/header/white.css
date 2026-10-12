@@ -18,3 +18,5 @@
 
 /* значок скачивания — тёмный */
 :is(#rec1656705211,#rec1656713361) .t396__elem[data-elem-id="1753356021400"] :is(.tn-atom,.tn-atom__img){ filter:brightness(0) !important; }
+/* значок лупы в поиске — тёмный */
+:is(#rec1656705211,#rec1656713361) .t838__search-icon{ filter:brightness(0) !important; opacity:.75; }
