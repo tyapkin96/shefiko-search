@@ -1,0 +1,23 @@
+/* ШЕФиКО: окно поиска Tilda на телефоне — единый тёмный вид на всех страницах.
+   Добавить в конец общего CSS (после основного оформления поиска). Откат: удалить этот фрагмент. */
+html:root:root:root #allrecords :is(.t-search-widget__overlay,.t-search-widget__header,.t-search-widget__popup,.t-search-widget__resultwrapper,.t-search-widget__productwrapper,.t-search-widget__notfound){background-color:#1C1D1B !important;color:#fff !important;}
+html:root:root:root #allrecords .t-search-widget__header{box-shadow:0 5px 12px rgba(0,0,0,.35) !important;}
+html:root:root:root #allrecords .t-search-widget__input{color:#fff !important;caret-color:#A3D65C !important;background-color:transparent !important;}
+html:root:root:root #allrecords .t-search-widget__input::placeholder{color:rgba(255,255,255,.6) !important;opacity:1 !important;}
+html:root:root:root #allrecords .t-search-widget__close-icon{filter:invert(1) !important;opacity:1 !important;}
+html:root:root:root #allrecords .t-search-widget__search-icon{filter:none !important;}
+html:root:root:root #allrecords .t-search-widget__query-result{color:rgba(255,255,255,.62) !important;opacity:1 !important;}
+html:root:root:root #allrecords .t-search-widget__result{background-color:transparent !important;border-bottom:1px solid rgba(255,255,255,.09) !important;}
+html:root:root:root #allrecords .t-search-widget__result_product-title,
+html:root:root:root #allrecords .t-search-widget__result_product-link,
+html:root:root:root #allrecords .t-search-widget__result__title,
+html:root:root:root #allrecords .t-search-widget__notfound .t-search-widget__result{color:#fff !important;-webkit-text-fill-color:#fff !important;}
+html:root:root:root #allrecords .t-search-widget__result_product-price{color:#A3D65C !important;-webkit-text-fill-color:#A3D65C !important;}
+html:root:root:root #allrecords .t-search-widget__result_product-desc,
+html:root:root:root #allrecords .t-search-widget__result__body{display:none !important;}
+html:root:root:root #allrecords .t-search-widget__result_product-img{background-color:#fff !important;border:0 !important;border-radius:8px !important;}
+html:root:root:root #allrecords .t-search-widget__pagination-item,
+html:root:root:root #allrecords .t-search-widget__pagination-button{color:#fff !important;}
+html:root:root:root #allrecords .t-search-widget__pagination-button svg path{stroke:#fff !important;}
+html:root:root:root #allrecords .t-search-widget__pagination-active{background-color:rgba(255,255,255,.14) !important;}
+html:root:root:root #allrecords .t-search-widget__loadmore-btn{background-color:#A3D65C !important;color:#1C1D1B !important;border:0 !important;}
