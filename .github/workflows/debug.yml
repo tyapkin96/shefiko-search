@@ -1,0 +1,24 @@
+name: Debug page capture
+on: workflow_dispatch
+permissions:
+  contents: write
+jobs:
+  cap:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Capture
+        run: |
+          mkdir -p debug
+          UA='Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/605.1.15 Version/17.0 Mobile/15E148 Safari/604.1'
+          curl -sL -A "$UA" https://shefiko.ru/ -o debug/home.html || true
+          grep -oE 'https?://[^"'"'"' ]+\.(js)[^"'"'"' ]*' debug/home.html | sort -u > debug/scripts.txt || true
+          grep -iE 'search|t838|t-site' debug/scripts.txt | while read u; do n=$(echo "$u" | sed 's#[^A-Za-z0-9._-]#_#g' | tail -c 120); curl -sL "$u" -o "debug/js_$n" || true; done
+          ls -la debug
+      - name: Commit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add debug
+          git commit -m "debug capture" || exit 0
+          git push
