@@ -1,11 +1,183 @@
 {
  "desktop": {
-  "tLoad": 15472,
+  "fetches": {
+   "https://tyapkin96.github.io/shefiko-search/index.json": {
+    "n": 1,
+    "bytes": 52427
+   },
+   "https://store.tildaapi.com/api/discounts/v1/getactive/": {
+    "n": 1,
+    "bytes": 0
+   },
+   "https://maps.yastatic.net/s3/home/fonts/ys/4/text-medium.woff2": {
+    "n": 1,
+    "bytes": 49548
+   },
+   "https://maps.yastatic.net/s3/home/fonts/ys/4/text-heavy.woff2": {
+    "n": 1,
+    "bytes": 49032
+   },
+   "https://maps.yastatic.net/s3/home/fonts/ys/4/text-regular.woff2": {
+    "n": 1,
+    "bytes": 41636
+   },
+   "https://maps.yastatic.net/s3/home/fonts/ys/4/text-bold.woff2": {
+    "n": 1,
+    "bytes": 49556
+   },
+   "https://maps.yastatic.net/s3/front-maps-static/maps-front-maps/static/v57/icons/rubrics/supermarket-14.svg": {
+    "n": 1,
+    "bytes": 0
+   },
+   "https://maps.yastatic.net/s3/front-maps-static/maps-front-maps/static/v57/icons/rubrics/supermarket-24.svg": {
+    "n": 1,
+    "bytes": 0
+   },
+   "https://maps.yastatic.net/s3/front-maps-static/maps-front-maps/static/v57/icons/core/logo-24.svg": {
+    "n": 1,
+    "bytes": 0
+   },
+   "https://core-renderer-tiles.maps.yandex.ru/style": {
+    "n": 1,
+    "bytes": 0
+   },
+   "https://mc.yandex.com/watch/N": {
+    "n": 1,
+    "bytes": 611
+   },
+   "https://core-renderer-tiles.maps.yandex.ru/fonts/list": {
+    "n": 1,
+    "bytes": 0
+   },
+   "https://mc.yandex.com/ytm-config/N": {
+    "n": 1,
+    "bytes": 199
+   },
+   "https://core-renderer-tiles.maps.yandex.ru/vmap3/tiles": {
+    "n": 15,
+    "bytes": 0
+   },
+   "https://core-renderer-tiles.maps.yandex.ru/vmap3/icons": {
+    "n": 47,
+    "bytes": 136378
+   },
+   "https://core-renderer-tiles.maps.yandex.ru/fonts/font": {
+    "n": 2,
+    "bytes": 216456
+   },
+   "https://core-renderer-tiles.maps.yandex.ru/tiles": {
+    "n": 37,
+    "bytes": 3621365
+   },
+   "https://core-renderer-tiles.maps.yandex.ru/fonts/glyphs": {
+    "n": 10,
+    "bytes": 0
+   }
+  },
+  "hosts": {
+   "shefiko.ru": {
+    "n": 3,
+    "bytes": 2454
+   },
+   "fonts.googleapis.com": {
+    "n": 3,
+    "bytes": 0
+   },
+   "cdnjs.cloudflare.com": {
+    "n": 2,
+    "bytes": 41419
+   },
+   "neo.tildacdn.com": {
+    "n": 1,
+    "bytes": 0
+   },
+   "static.tildacdn.com": {
+    "n": 87,
+    "bytes": 361771
+   },
+   "fonts.gstatic.com": {
+    "n": 6,
+    "bytes": 304144
+   },
+   "tyapkin96.github.io": {
+    "n": 1,
+    "bytes": 52427
+   },
+   "thb.tildacdn.com": {
+    "n": 29,
+    "bytes": 0
+   },
+   "www.supersigma.com": {
+    "n": 1,
+    "bytes": 41286
+   },
+   "yandex.ru": {
+    "n": 2,
+    "bytes": 0
+   },
+   "optim.tildacdn.com": {
+    "n": 24,
+    "bytes": 354222
+   },
+   "2021.gastreet.com": {
+    "n": 1,
+    "bytes": 86518
+   },
+   "members.tildaapi.com": {
+    "n": 17,
+    "bytes": 0
+   },
+   "ksk-crimea.ru": {
+    "n": 1,
+    "bytes": 44308
+   },
+   "xn--80aiadwg4b8e.xn--p1ai": {
+    "n": 1,
+    "bytes": 179506
+   },
+   "napitki.ru": {
+    "n": 1,
+    "bytes": 26094
+   },
+   "aqua21vek.ru": {
+    "n": 1,
+    "bytes": 272953
+   },
+   "store.tildaapi.com": {
+    "n": 1,
+    "bytes": 0
+   },
+   "maps.yastatic.net": {
+    "n": 14,
+    "bytes": 240834
+   },
+   "static.onlinetrade.ru": {
+    "n": 1,
+    "bytes": 57527
+   },
+   "mc.yandex.ru": {
+    "n": 3,
+    "bytes": 102431
+   },
+   "mc.yandex.com": {
+    "n": 14,
+    "bytes": 3171
+   },
+   "stat.tildaapi.com": {
+    "n": 1,
+    "bytes": 0
+   },
+   "core-renderer-tiles.maps.yandex.ru": {
+    "n": 123,
+    "bytes": 4142606
+   }
+  },
+  "tLoad": 6045,
   "perf": {
-   "lcp": 8034,
+   "lcp": 3018,
    "cls": 0,
-   "dcl": 6738,
-   "load": 15468
+   "dcl": 2106,
+   "load": 6042
   },
   "info": {
    "title": "ШЕФиКО | Свежие продукты для кафе, ресторанов и производств Москвы и области - от одного поставщика с доставкой на следующий день",
@@ -36,7 +208,7 @@
    "scrollTrigger": "function",
    "links": 119,
    "buttons": 21,
-   "htmlBytes": 1272843,
+   "htmlBytes": 1272785,
    "nav": [
     "О компании",
     "Каталог продукции",
@@ -60,28 +232,28 @@
     "Соль, сахар, специи и бульоны"
    ]
   },
-  "requests": 339,
+  "requests": 338,
   "totalBytesKnown": 6313671,
   "byType": {
    "document": {
     "n": 3,
     "bytes": 565
    },
-   "script": {
-    "n": 46,
-    "bytes": 194912
-   },
    "stylesheet": {
     "n": 21,
     "bytes": 1889
    },
+   "script": {
+    "n": 46,
+    "bytes": 194912
+   },
+   "image": {
+    "n": 127,
+    "bytes": 1592721
+   },
    "font": {
     "n": 6,
     "bytes": 304144
-   },
-   "image": {
-    "n": 128,
-    "bytes": 1592721
    },
    "fetch": {
     "n": 124,
@@ -117,16 +289,16 @@
    "Failed to execute 'getComputedStyle' on 'Window': parameter 1 is not of type 'Element'."
   ],
   "cons": [
-   "[GroupMarkerNotSet(crbug.com/242999)!:A0301C00EC300000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader flag to opt in to lower security guarantees ",
-   "[.WebGL-0x3d6c01f09400]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels",
-   "[GroupMarkerNotSet(crbug.com/242999)!:A0601C00EC300000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader flag to opt in to lower security guarantees ",
+   "[GroupMarkerNotSet(crbug.com/242999)!:A0301C001C010000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader flag to opt in to lower security guarantees ",
+   "[.WebGL-0x3d940248b100]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels",
+   "[GroupMarkerNotSet(crbug.com/242999)!:A0601C001C010000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader flag to opt in to lower security guarantees ",
    "lazy loading err",
    "lazy loading err",
    "lazy loading err",
    "lazy loading err",
-   "[.WebGL-0x3d6c01f09400]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels",
-   "[.WebGL-0x3d6c01f09400]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels",
-   "[.WebGL-0x3d6c01f09400]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels (this message will no longer repeat)"
+   "[.WebGL-0x3d940248b100]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels",
+   "[.WebGL-0x3d940248b100]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels",
+   "[.WebGL-0x3d940248b100]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels (this message will no longer repeat)"
   ],
   "sections": [
    "rec1656704121 t360 h0 ",
@@ -180,12 +352,184 @@
   ]
  },
  "mobile": {
-  "tLoad": 4984,
+  "fetches": {
+   "https://tyapkin96.github.io/shefiko-search/index.json": {
+    "n": 1,
+    "bytes": 52427
+   },
+   "https://maps.yastatic.net/s3/home/fonts/ys/4/text-medium.woff2": {
+    "n": 1,
+    "bytes": 49548
+   },
+   "https://maps.yastatic.net/s3/home/fonts/ys/4/text-heavy.woff2": {
+    "n": 1,
+    "bytes": 49032
+   },
+   "https://maps.yastatic.net/s3/home/fonts/ys/4/text-regular.woff2": {
+    "n": 1,
+    "bytes": 41636
+   },
+   "https://maps.yastatic.net/s3/home/fonts/ys/4/text-bold.woff2": {
+    "n": 1,
+    "bytes": 49556
+   },
+   "https://maps.yastatic.net/s3/front-maps-static/maps-front-maps/static/v57/icons/rubrics/supermarket-14.svg": {
+    "n": 1,
+    "bytes": 0
+   },
+   "https://maps.yastatic.net/s3/front-maps-static/maps-front-maps/static/v57/icons/rubrics/supermarket-24.svg": {
+    "n": 1,
+    "bytes": 0
+   },
+   "https://maps.yastatic.net/s3/front-maps-static/maps-front-maps/static/v57/icons/core/logo-24.svg": {
+    "n": 1,
+    "bytes": 0
+   },
+   "https://store.tildaapi.com/api/discounts/v1/getactive/": {
+    "n": 1,
+    "bytes": 0
+   },
+   "https://core-renderer-tiles.maps.yandex.ru/style": {
+    "n": 1,
+    "bytes": 0
+   },
+   "https://mc.yandex.com/watch/N": {
+    "n": 1,
+    "bytes": 611
+   },
+   "https://core-renderer-tiles.maps.yandex.ru/fonts/list": {
+    "n": 1,
+    "bytes": 0
+   },
+   "https://mc.yandex.com/ytm-config/N": {
+    "n": 1,
+    "bytes": 199
+   },
+   "https://core-renderer-tiles.maps.yandex.ru/vmap3/tiles": {
+    "n": 12,
+    "bytes": 0
+   },
+   "https://core-renderer-tiles.maps.yandex.ru/vmap3/icons": {
+    "n": 40,
+    "bytes": 115609
+   },
+   "https://core-renderer-tiles.maps.yandex.ru/fonts/font": {
+    "n": 2,
+    "bytes": 216456
+   },
+   "https://core-renderer-tiles.maps.yandex.ru/tiles": {
+    "n": 35,
+    "bytes": 2710695
+   },
+   "https://core-renderer-tiles.maps.yandex.ru/fonts/glyphs": {
+    "n": 10,
+    "bytes": 0
+   }
+  },
+  "hosts": {
+   "shefiko.ru": {
+    "n": 3,
+    "bytes": 2454
+   },
+   "fonts.googleapis.com": {
+    "n": 3,
+    "bytes": 0
+   },
+   "cdnjs.cloudflare.com": {
+    "n": 2,
+    "bytes": 41419
+   },
+   "neo.tildacdn.com": {
+    "n": 1,
+    "bytes": 0
+   },
+   "static.tildacdn.com": {
+    "n": 88,
+    "bytes": 397703
+   },
+   "fonts.gstatic.com": {
+    "n": 6,
+    "bytes": 304144
+   },
+   "tyapkin96.github.io": {
+    "n": 1,
+    "bytes": 52427
+   },
+   "thb.tildacdn.com": {
+    "n": 30,
+    "bytes": 0
+   },
+   "static.onlinetrade.ru": {
+    "n": 1,
+    "bytes": 57527
+   },
+   "aqua21vek.ru": {
+    "n": 1,
+    "bytes": 272953
+   },
+   "www.supersigma.com": {
+    "n": 1,
+    "bytes": 41286
+   },
+   "xn--80aiadwg4b8e.xn--p1ai": {
+    "n": 1,
+    "bytes": 179506
+   },
+   "2021.gastreet.com": {
+    "n": 1,
+    "bytes": 86518
+   },
+   "yandex.ru": {
+    "n": 2,
+    "bytes": 0
+   },
+   "ksk-crimea.ru": {
+    "n": 1,
+    "bytes": 44308
+   },
+   "napitki.ru": {
+    "n": 1,
+    "bytes": 26094
+   },
+   "optim.tildacdn.com": {
+    "n": 27,
+    "bytes": 181890
+   },
+   "maps.yastatic.net": {
+    "n": 14,
+    "bytes": 240834
+   },
+   "members.tildaapi.com": {
+    "n": 17,
+    "bytes": 0
+   },
+   "store.tildaapi.com": {
+    "n": 1,
+    "bytes": 0
+   },
+   "mc.yandex.ru": {
+    "n": 3,
+    "bytes": 102431
+   },
+   "core-renderer-tiles.maps.yandex.ru": {
+    "n": 107,
+    "bytes": 3359303
+   },
+   "mc.yandex.com": {
+    "n": 12,
+    "bytes": 3085
+   },
+   "stat.tildaapi.com": {
+    "n": 1,
+    "bytes": 0
+   }
+  },
+  "tLoad": 5123,
   "perf": {
-   "lcp": 2419,
+   "lcp": 2881,
    "cls": 0,
-   "dcl": 1391,
-   "load": 4981
+   "dcl": 1560,
+   "load": 5121
   },
   "info": {
    "title": "ШЕФиКО | Свежие продукты для кафе, ресторанов и производств Москвы и области - от одного поставщика с доставкой на следующий день",
@@ -216,7 +560,7 @@
    "scrollTrigger": "function",
    "links": 119,
    "buttons": 21,
-   "htmlBytes": 1282085,
+   "htmlBytes": 1281550,
    "nav": [
     "О компании",
     "Каталог продукции",
@@ -241,7 +585,7 @@
    ]
   },
   "requests": 325,
-  "totalBytesKnown": 5445938,
+  "totalBytesKnown": 5393882,
   "byType": {
    "document": {
     "n": 3,
@@ -252,12 +596,12 @@
     "bytes": 1889
    },
    "script": {
-    "n": 47,
+    "n": 46,
     "bytes": 194912
    },
    "image": {
-    "n": 127,
-    "bytes": 1656513
+    "n": 128,
+    "bytes": 1604457
    },
    "font": {
     "n": 6,
@@ -294,8 +638,8 @@
    "t396_doResize is not defined"
   ],
   "cons": [
-   "[GroupMarkerNotSet(crbug.com/242999)!:A0E0B306EC300000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader flag to opt in to lower security guarantees ",
-   "[GroupMarkerNotSet(crbug.com/242999)!:A010B406EC300000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader flag to opt in to lower security guarantees ",
+   "[GroupMarkerNotSet(crbug.com/242999)!:A0301C001C010000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader flag to opt in to lower security guarantees ",
+   "[GroupMarkerNotSet(crbug.com/242999)!:A0901C001C010000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader flag to opt in to lower security guarantees ",
    "lazy loading err",
    "lazy loading err",
    "lazy loading err",
