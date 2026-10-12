@@ -1,0 +1,37 @@
+/* ШЕФиКО · шапка v2 — общая часть (меняет только внешний вид, ссылки и положение элементов не трогает) */
+/* ссылки меню (кроме большой кнопки «Каталог») */
+:is(#rec1656705211,#rec1656713361) .t396__elem[data-elem-type="button"]:not([data-elem-id="1753355192457"]) .tn-atom{
+  position:relative !important; isolation:isolate; overflow:visible !important;
+  font-weight:600 !important; letter-spacing:.005em; transition:color .2s ease;
+}
+:is(#rec1656705211,#rec1656713361) .t396__elem[data-elem-type="button"]:not([data-elem-id="1753355192457"]) .tn-atom::before{
+  content:""; position:absolute; inset:-10px -13px; border-radius:999px; z-index:-1;
+  transition:background-color .2s ease, transform .2s ease, box-shadow .2s ease, border-color .2s ease;
+}
+:is(#rec1656705211,#rec1656713361) .t396__elem[data-elem-type="button"]:not([data-elem-id="1753355192457"]) .tn-atom:hover::before{ transform:translateY(-1px); }
+/* «Скачать прайс» */
+:is(#rec1656705211,#rec1656713361) .t396__elem[data-elem-id="1753355192439"] .tn-atom{
+  position:relative !important; isolation:isolate; overflow:visible !important; font-weight:600 !important; white-space:nowrap;
+}
+:is(#rec1656705211,#rec1656713361) .t396__elem[data-elem-id="1753355192439"] .tn-atom::before{
+  content:""; position:absolute; inset:-10px -16px -10px -30px; border-radius:999px; z-index:-1; transition:background-color .2s ease, transform .2s ease;
+}
+:is(#rec1656705211,#rec1656713361) .t396__elem[data-elem-id="1753355192439"] .tn-atom:hover::before{ transform:translateY(-1px); }
+/* «Каталог» — большая зелёная кнопка */
+:is(#rec1656705211,#rec1656713361) .t396__elem[data-elem-id="1753355192457"] .tn-atom{
+  background:linear-gradient(180deg,#8DB455 0%,#6C9238 100%) !important;
+  border:1px solid rgba(255,255,255,.28) !important; border-radius:16px !important;
+  box-shadow:0 10px 28px rgba(127,166,74,.45), inset 0 1px 0 rgba(255,255,255,.4) !important;
+  transition:transform .2s ease, box-shadow .2s ease, filter .2s ease;
+}
+:is(#rec1656705211,#rec1656713361) .t396__elem[data-elem-id="1753355192457"] .tn-atom:hover{
+  transform:translateY(-2px); filter:brightness(1.06); box-shadow:0 16px 36px rgba(127,166,74,.55), inset 0 1px 0 rgba(255,255,255,.5) !important;
+}
+:is(#rec1656705211,#rec1656713361) .t396__elem[data-elem-id="1753355421289"] .tn-atom{ font-weight:700 !important; letter-spacing:.01em; }
+/* корзина: текст в одну строку */
+:is(#rec1656705211,#rec1656713361) .t396__elem[data-elem-id="1753355192531"] .tn-atom{ white-space:nowrap !important; font-weight:600 !important; }
+/* общие скругления и плавность у плашек поиска, корзины и профиля */
+:is(#rec1656705211,#rec1656713361) .t396__elem:is([data-elem-id="1753355192462"],[data-elem-id="1753355192509"],[data-elem-id="1753355192551"]) .tn-atom{
+  border-radius:16px !important; transition:transform .2s ease, box-shadow .2s ease, background-color .2s ease, border-color .2s ease;
+}
+:is(#rec1656705211,#rec1656713361) .t396__elem:is([data-elem-id="1753355192509"],[data-elem-id="1753355192551"]) .tn-atom:hover{ transform:translateY(-2px); }
