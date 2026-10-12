@@ -14,7 +14,7 @@ jobs:
            https://static.tildacdn.com/tild3734-3961-4362-b035-343938356331/Group_10.svg \
            https://static.tildacdn.com/tild3736-3033-4730-b935-353032396230/Group_2089344548.svg \
            https://static.tildacdn.com/tild6338-3264-4464-a262-323963396536/photo.webp \
-           https://static.tildacdn.com/tild3264-3232-4462-a262-386261366663/d1e7a970-7e99-4f94-a.png ; do
+           https://static.tildacdn.com/tild6365-3633-4036-b962-323064633364/__.svg https://static.tildacdn.com/tild6561-3130-4432-b261-363334376239/d.svg https://static.tildacdn.com/tild3631-6562-4164-b634-646439373432/svg_1753356021372.svg https://static.tildacdn.com/tild6666-3736-4932-b836-336238393862/burger.svg ; do
             curl -sL --compressed "$u" -o "$(basename $u)" || true
           done
           ls -la
