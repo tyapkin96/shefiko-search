@@ -14,6 +14,8 @@ jobs:
           curl -sL -A "$UA" https://shefiko.ru/ -o debug/home.html || true
           grep -oE 'https?://[^"'"'"' ]+\.(js)[^"'"'"' ]*' debug/home.html | sort -u > debug/scripts.txt || true
           grep -iE 'search|t838|t-site' debug/scripts.txt | while read u; do n=$(echo "$u" | sed 's#[^A-Za-z0-9._-]#_#g' | tail -c 120); curl -sL "$u" -o "debug/js_$n" || true; done
+          curl -sL https://static.tildacdn.com/js/tilda-search-1.2.min.js -o debug/tilda-search.js || true
+          curl -sL https://static.tildacdn.com/css/tilda-search-1.2.min.css -o debug/tilda-search.css || true
           ls -la debug
       - name: Commit
         run: |
