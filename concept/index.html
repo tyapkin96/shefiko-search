@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="ru"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Концепции главного экрана ШЕФиКО</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--g:#7FA64A;--g2:#6C9238;--gl:#A3D65C;--ink:#1C1D1B;--cream:#F1EEE6}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{width:1440px;height:900px;overflow:hidden;background:#0c0d0b;font-family:'Manrope',system-ui,sans-serif;color:#fff;-webkit-font-smoothing:antialiased}
+.v{display:none;position:relative;width:1440px;height:900px;overflow:hidden}
+body[data-v=a] .a,body[data-v=b] .b,body[data-v=c] .c{display:block}
+svg.i{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round;flex:none}
+.wrap{position:absolute;left:140px;width:1160px}
+a{color:inherit;text-decoration:none}
+.glass{background:rgba(255,255,255,.075);backdrop-filter:blur(22px) saturate(140%);-webkit-backdrop-filter:blur(22px) saturate(140%);border:1px solid rgba(255,255,255,.15);box-shadow:0 18px 50px rgba(0,0,0,.35),inset 0 1px 0 rgba(255,255,255,.14)}
+.btn{display:inline-flex;align-items:center;gap:10px;height:48px;padding:0 20px;border-radius:14px;font-weight:600;font-size:15px;white-space:nowrap}
+.btn-g{background:linear-gradient(180deg,#8DB455,#6C9238);color:#fff;box-shadow:0 8px 24px rgba(127,166,74,.45),inset 0 1px 0 rgba(255,255,255,.35)}
+.tag{position:absolute;display:flex;align-items:center;gap:8px;height:36px;padding:0 14px 0 10px;border-radius:18px;font-size:13px;font-weight:600}
+.tag:before{content:"";width:8px;height:8px;border-radius:50%;background:var(--gl);box-shadow:0 0 0 4px rgba(163,214,92,.25)}
+
+/* ---------- A: Glass Night ---------- */
+.a .bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:60% 40%}
+.a .shade{position:absolute;inset:0;background:linear-gradient(90deg,rgba(8,9,8,.94) 0%,rgba(8,9,8,.78) 34%,rgba(8,9,8,.15) 66%,rgba(8,9,8,0) 100%),linear-gradient(180deg,rgba(8,9,8,.65) 0,rgba(8,9,8,0) 22%,rgba(8,9,8,0) 70%,rgba(8,9,8,.7) 100%)}
+.a .bar{top:20px;height:56px;border-radius:28px;display:flex;align-items:center;padding:0 12px 0 26px}
+.a .bar img{height:28px;margin-right:46px}
+.a .nav{display:flex;gap:30px;font-size:14px;font-weight:500;color:rgba(255,255,255,.82);flex:1}
+.a .nav a.on{color:#fff}
+.a .price{height:38px;border-radius:19px;padding:0 16px;font-size:13.5px;border:1px solid rgba(255,255,255,.22);background:rgba(255,255,255,.06)}
+.a .cmd{top:88px;height:66px;border-radius:22px;display:flex;align-items:center;gap:10px;padding:9px}
+.a .search{flex:1;height:48px;border-radius:14px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.1);display:flex;align-items:center;gap:12px;padding:0 18px;color:rgba(255,255,255,.55);font-size:15px}
+.a .search .k{margin-left:auto;font-size:12px;border:1px solid rgba(255,255,255,.2);border-radius:7px;padding:3px 8px;color:rgba(255,255,255,.55)}
+.a .cart{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.16);color:#fff}
+.a .cart b{display:inline-grid;place-items:center;min-width:22px;height:22px;border-radius:11px;background:#fff;color:var(--ink);font-size:12px;margin-left:2px}
+.a .acc{width:48px;padding:0;justify-content:center;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.16)}
+.a .copy{top:236px;width:700px}
+.a .chip{display:inline-flex;align-items:center;gap:10px;height:34px;padding:0 16px 0 12px;border-radius:17px;font-size:13px;font-weight:600;color:rgba(255,255,255,.92)}
+.a .chip:before{content:"";width:8px;height:8px;border-radius:50%;background:var(--gl);box-shadow:0 0 0 4px rgba(163,214,92,.28)}
+.a h1{margin-top:22px;font-size:56px;line-height:1.06;font-weight:700;letter-spacing:-.025em}
+.a h1 em{font-style:normal;color:var(--gl)}
+.a .sub{margin-top:20px;font-size:17px;line-height:1.5;color:rgba(255,255,255,.72);max-width:540px}
+.a .ctas{margin-top:30px;display:flex;gap:12px}
+.a .ctas .btn{height:56px;padding:0 28px;font-size:16px;border-radius:16px}
+.a .ghost{border:1px solid rgba(255,255,255,.28);background:rgba(255,255,255,.06)}
+.a .cards{top:748px;display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.a .card{height:92px;border-radius:22px;display:flex;align-items:center;gap:16px;padding:0 22px}
+.a .ic{width:46px;height:46px;border-radius:14px;background:rgba(163,214,92,.16);border:1px solid rgba(163,214,92,.35);display:grid;place-items:center;color:var(--gl);flex:none}
+.a .card b{display:block;font-size:16px;font-weight:700;margin-bottom:3px}
+.a .card span{font-size:13.5px;color:rgba(255,255,255,.7);line-height:1.35;display:block}
+
+/* ---------- B: Cream Editorial ---------- */
+.b{background:var(--cream);color:var(--ink)}
+.b .blob{position:absolute;right:-120px;top:-160px;width:760px;height:760px;border-radius:50%;background:radial-gradient(circle,rgba(163,214,92,.38),rgba(163,214,92,0) 68%)}
+.b .bar{top:20px;height:68px;border-radius:34px;display:flex;align-items:center;gap:12px;padding:0 10px 0 28px;background:#fff;box-shadow:0 14px 40px rgba(60,55,40,.12);border:1px solid rgba(28,29,27,.06)}
+.b .bar img{height:28px;margin-right:22px}
+.b .nav{display:flex;gap:22px;font-size:14px;font-weight:600;color:rgba(28,29,27,.72);flex:1}
+.b .bsearch{width:230px;height:48px;border-radius:24px;background:#F3F1EB;display:flex;align-items:center;gap:10px;padding:0 16px;color:rgba(28,29,27,.5);font-size:14px}
+.b .btn{height:48px;border-radius:24px}
+.b .dark{background:var(--ink);color:#fff}
+.b .acc{width:48px;padding:0;justify-content:center;background:#F3F1EB;color:var(--ink)}
+.b .copy{top:176px;width:640px}
+.b .chip{display:inline-flex;align-items:center;gap:10px;height:34px;padding:0 16px 0 12px;border-radius:17px;font-size:13px;font-weight:700;background:#fff;box-shadow:0 6px 20px rgba(60,55,40,.09)}
+.b .chip:before{content:"";width:8px;height:8px;border-radius:50%;background:var(--g);box-shadow:0 0 0 4px rgba(127,166,74,.25)}
+.b h1{margin-top:24px;font-size:58px;line-height:1.05;font-weight:800;letter-spacing:-.03em}
+.b h1 em{font-style:normal;background:linear-gradient(180deg,transparent 58%,#CFE3A8 58%,#CFE3A8 92%,transparent 92%);padding:0 4px;margin:0 -4px}
+.b .sub{margin-top:22px;font-size:17px;line-height:1.5;color:rgba(28,29,27,.66);max-width:520px}
+.b .ctas{margin-top:30px;display:flex;gap:12px}
+.b .ctas .btn{height:58px;padding:0 30px;font-size:16px;border-radius:29px}
+.b .outline{border:1.5px solid rgba(28,29,27,.2);background:transparent}
+.b .arch{position:absolute;left:800px;top:112px;width:500px;height:700px;border-radius:250px 250px 32px 32px;overflow:hidden;box-shadow:0 40px 80px rgba(60,55,40,.28)}
+.b .arch img{width:100%;height:100%;object-fit:cover;object-position:76% 50%;transform:scale(1.05)}
+.b .arch:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,0) 55%,rgba(0,0,0,.35));}
+.b .ring{position:absolute;left:748px;top:86px;width:604px;height:752px;border-radius:302px 302px 40px 40px;border:1.5px dashed rgba(28,29,27,.22)}
+.b .badge{position:absolute;left:716px;top:560px;width:156px;height:156px;border-radius:50%;background:var(--g);color:#fff;display:grid;place-content:center;text-align:center;box-shadow:0 20px 40px rgba(108,146,56,.45);transform:rotate(-8deg)}
+.b .badge b{font-size:44px;line-height:1;font-weight:800}
+.b .badge span{font-size:13px;font-weight:700;line-height:1.2;margin-top:4px}
+.b .float{position:absolute;left:1040px;top:690px;width:300px;border-radius:22px;padding:16px 18px;display:flex;gap:14px;align-items:center;background:rgba(255,255,255,.82);backdrop-filter:blur(18px);box-shadow:0 20px 50px rgba(0,0,0,.25);color:var(--ink)}
+.b .float .ic{width:44px;height:44px;border-radius:13px;background:#E7F0D6;color:var(--g2);display:grid;place-items:center;flex:none}
+.b .float b{display:block;font-size:15px}.b .float span{font-size:13px;color:rgba(28,29,27,.65)}
+.b .cards{top:690px;width:640px;display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.b .card{background:#fff;border-radius:20px;padding:16px;min-height:112px;box-shadow:0 10px 30px rgba(60,55,40,.08);border:1px solid rgba(28,29,27,.05)}
+.b .card .ic{width:36px;height:36px;border-radius:11px;background:#E7F0D6;color:var(--g2);display:grid;place-items:center;margin-bottom:10px}
+.b .card b{display:block;font-size:14px;line-height:1.25;font-weight:700}
+.b .card span{font-size:12.5px;color:rgba(28,29,27,.6);display:block;margin-top:3px;line-height:1.3}
+
+/* ---------- C: Dark Stage ---------- */
+.c{background:#121310}
+.c .glow{position:absolute;left:760px;top:60px;width:700px;height:700px;border-radius:50%;background:radial-gradient(circle,rgba(127,166,74,.55),rgba(127,166,74,0) 66%);filter:blur(10px)}
+.c .glow2{position:absolute;left:-200px;top:380px;width:620px;height:620px;border-radius:50%;background:radial-gradient(circle,rgba(163,214,92,.14),rgba(163,214,92,0) 70%)}
+.c .head{top:26px;height:56px;display:flex;align-items:center;gap:12px}
+.c .head img{height:30px;margin-right:30px}
+.c .nav{display:flex;gap:26px;font-size:14px;font-weight:500;color:rgba(255,255,255,.7);flex:1}
+.c .csearch{width:210px;height:44px;border-radius:12px;border:1px solid rgba(255,255,255,.16);display:flex;align-items:center;gap:10px;padding:0 14px;color:rgba(255,255,255,.5);font-size:14px}
+.c .btn{height:44px;border-radius:12px;font-size:14px;padding:0 18px}
+.c .ico{width:44px;padding:0;justify-content:center;border:1px solid rgba(255,255,255,.16)}
+.c .photo{position:absolute;left:760px;top:112px;width:540px;height:560px;border-radius:36px;overflow:hidden;border:1px solid rgba(255,255,255,.14);box-shadow:0 40px 90px rgba(0,0,0,.6)}
+.c .photo img{width:100%;height:100%;object-fit:cover;object-position:80% 45%}
+.c .photo:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,0) 60%,rgba(0,0,0,.45))}
+.c .copy{top:128px;width:660px}
+.c .chip{display:inline-flex;align-items:center;gap:10px;height:34px;padding:0 16px 0 12px;border-radius:17px;font-size:13px;font-weight:600;border:1px solid rgba(255,255,255,.2);color:rgba(255,255,255,.9)}
+.c .chip:before{content:"";width:8px;height:8px;border-radius:50%;background:var(--gl);box-shadow:0 0 0 4px rgba(163,214,92,.28)}
+.c h1{margin-top:22px;font-size:60px;line-height:1.02;font-weight:800;letter-spacing:-.035em}
+.c h1 em{font-style:normal;color:var(--gl)}
+.c .ctas{margin-top:30px;display:flex;gap:12px}
+.c .ctas .btn{height:56px;padding:0 28px;font-size:16px;border-radius:28px}
+.c .ghost{border:1px solid rgba(255,255,255,.28)}
+.c .stats{position:absolute;left:140px;top:560px;display:flex;gap:44px}
+.c .stats div b{display:block;font-size:36px;font-weight:800;letter-spacing:-.02em}
+.c .stats div span{font-size:13px;color:rgba(255,255,255,.6)}
+.c .stats div{padding-left:16px;border-left:2px solid var(--g)}
+.c .mini{position:absolute;left:1070px;top:540px;width:300px;border-radius:20px;padding:16px;display:flex;gap:14px;align-items:center}
+.c .mini .ic{width:44px;height:44px;border-radius:13px;background:rgba(163,214,92,.18);color:var(--gl);display:grid;place-items:center;flex:none}
+.c .mini b{display:block;font-size:15px}.c .mini span{font-size:13px;color:rgba(255,255,255,.7)}
+.c .marq{position:absolute;left:0;top:704px;width:1440px;overflow:hidden;white-space:nowrap;font-size:84px;font-weight:800;letter-spacing:-.03em;line-height:1;border-top:1px solid rgba(255,255,255,.1);padding-top:22px;height:196px}
+.c .marq span{margin-right:36px;color:transparent;-webkit-text-stroke:1.5px rgba(255,255,255,.38)}
+.c .marq span.f{color:var(--gl);-webkit-text-stroke:0}
+.c .marq i{font-style:normal;color:var(--g);margin-right:36px}
+</style></head>
+<body>
+<svg width="0" height="0" style="position:absolute"><defs>
+<symbol id="menu" viewBox="0 0 24 24"><path d="M4 8h16M4 16h10"/></symbol>
+<symbol id="search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4 4"/></symbol>
+<symbol id="bag" viewBox="0 0 24 24"><path d="M5.5 8h13l-1 11h-11z"/><path d="M9 8V6.5a3 3 0 0 1 6 0V8"/></symbol>
+<symbol id="user" viewBox="0 0 24 24"><circle cx="12" cy="8.5" r="3.6"/><path d="M5 20c.6-3.6 3.4-5.6 7-5.6s6.4 2 7 5.6"/></symbol>
+<symbol id="dl" viewBox="0 0 24 24"><path d="M12 4v11m0 0-4-4m4 4 4-4M5 20h14"/></symbol>
+<symbol id="check" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="m8.5 12.3 2.4 2.4 4.6-5"/></symbol>
+<symbol id="truck" viewBox="0 0 24 24"><path d="M3 7h11v9H3zM14 10h4l3 3v3h-7"/><circle cx="7.5" cy="17" r="1.8"/><circle cx="17" cy="17" r="1.8"/></symbol>
+<symbol id="basket" viewBox="0 0 24 24"><path d="M3.5 10h17l-1.6 9h-13.8zM8 10l3-5M16 10l-3-5"/></symbol>
+<symbol id="arrow" viewBox="0 0 24 24"><path d="M5 12h14m-5-5 5 5-5 5"/></symbol>
+</defs></svg>
+
+<!-- ============ A ============ -->
+<section class="v a">
+  <img class="bg" src="hero.jpg" alt=""><div class="shade"></div>
+  <header>
+    <div class="wrap bar glass">
+      <img src="logo-light.svg" alt="ШЕФиКО">
+      <nav class="nav"><a>О компании</a><a>Каталог продукции</a><a>Доставка и оплата</a><a>Контакты</a><a>Регистрация</a></nav>
+      <a class="btn price"><svg class="i"><use href="#dl"/></svg>Скачать прайс</a>
+    </div>
+    <div class="wrap cmd glass">
+      <a class="btn btn-g"><svg class="i"><use href="#menu"/></svg>Каталог</a>
+      <div class="search"><svg class="i"><use href="#search"/></svg>Поиск по названию, например, «Соль»<span class="k">/</span></div>
+      <a class="btn cart"><svg class="i"><use href="#bag"/></svg>Корзина<b>0</b></a>
+      <a class="btn acc"><svg class="i"><use href="#user"/></svg></a>
+    </div>
+  </header>
+  <div class="wrap copy">
+    <span class="chip glass">Москва и область · доставка на следующий день</span>
+    <h1>Свежие продукты для кафе, ресторанов и производств — <em>от одного поставщика</em></h1>
+    <p class="sub">Более 1 000 наименований в каталоге. Один заказ, один договор, доставка на следующий день.</p>
+    <div class="ctas"><a class="btn btn-g">Сделать первый заказ<svg class="i"><use href="#arrow"/></svg></a><a class="btn ghost"><svg class="i"><use href="#dl"/></svg>Скачать прайс</a></div>
+  </div>
+  <span class="tag glass" style="left:1010px;top:330px">Сыры</span>
+  <span class="tag glass" style="left:1196px;top:470px">Масла и соусы</span>
+  <span class="tag glass" style="left:1000px;top:610px">Овощи и зелень</span>
+  <div class="wrap cards">
+    <div class="card glass"><div class="ic"><svg class="i"><use href="#check"/></svg></div><div><b>Все необходимое</b><span>в одном заказе для вас</span></div></div>
+    <div class="card glass"><div class="ic"><svg class="i"><use href="#truck"/></svg></div><div><b>Работаем 5 дней в неделю</b><span>с понедельника по пятницу</span></div></div>
+    <div class="card glass"><div class="ic"><svg class="i"><use href="#basket"/></svg></div><div><b>Минимальная сумма заказа</b><span>от 15 000 ₽</span></div></div>
+  </div>
+</section>
+
+<!-- ============ B ============ -->
+<section class="v b">
+  <div class="blob"></div>
+  <div class="wrap bar">
+    <img src="logo-dark.svg" alt="ШЕФиКО">
+    <nav class="nav"><a>О компании</a><a>Каталог</a><a>Доставка и оплата</a><a>Контакты</a><a>Регистрация</a></nav>
+    <a class="btn dark"><svg class="i"><use href="#menu"/></svg>Каталог</a>
+    <div class="bsearch"><svg class="i"><use href="#search"/></svg>Поиск по названию</div>
+    <a class="btn" style="background:#EAF2DA;color:var(--g2)"><svg class="i"><use href="#bag"/></svg>0</a>
+    <a class="btn acc"><svg class="i"><use href="#user"/></svg></a>
+  </div>
+  <div class="wrap copy">
+    <span class="chip">Москва и область · доставка на следующий день</span>
+    <h1>Свежие продукты для кафе, ресторанов и производств — <em>от одного поставщика</em></h1>
+    <p class="sub">Более 1 000 наименований в каталоге. Один заказ, один договор, доставка на следующий день.</p>
+    <div class="ctas"><a class="btn dark">Сделать первый заказ<svg class="i"><use href="#arrow"/></svg></a><a class="btn outline"><svg class="i"><use href="#dl"/></svg>Скачать прайс</a></div>
+  </div>
+  <div class="ring"></div>
+  <div class="arch"><img src="hero.jpg" alt=""></div>
+  <div class="badge"><b>5</b><span>дней<br>в неделю</span></div>
+  <div class="float"><div class="ic"><svg class="i"><use href="#basket"/></svg></div><div><b>Минимальная сумма</b><span>заказа — от 15 000 ₽</span></div></div>
+  <div class="wrap cards">
+    <div class="card"><div class="ic"><svg class="i"><use href="#check"/></svg></div><b>Все необходимое</b><span>в одном заказе для вас</span></div>
+    <div class="card"><div class="ic"><svg class="i"><use href="#truck"/></svg></div><b>Работаем 5 дней в неделю</b><span>с понедельника по пятницу</span></div>
+    <div class="card"><div class="ic"><svg class="i"><use href="#basket"/></svg></div><b>Минимальная сумма</b><span>заказа — от 15 000 ₽</span></div>
+  </div>
+</section>
+
+<!-- ============ C ============ -->
+<section class="v c">
+  <div class="glow"></div><div class="glow2"></div>
+  <div class="wrap head">
+    <img src="logo-light.svg" alt="ШЕФиКО">
+    <nav class="nav"><a>О компании</a><a>Каталог продукции</a><a>Доставка и оплата</a><a>Контакты</a><a>Регистрация</a></nav>
+    <div class="csearch"><svg class="i"><use href="#search"/></svg>Поиск</div>
+    <a class="btn btn-g"><svg class="i"><use href="#menu"/></svg>Каталог</a>
+    <a class="btn ico"><svg class="i"><use href="#bag"/></svg></a>
+    <a class="btn ico"><svg class="i"><use href="#user"/></svg></a>
+  </div>
+  <div class="photo"><img src="hero.jpg" alt=""></div>
+  <div class="wrap copy">
+    <span class="chip">Москва и область · доставка на следующий день</span>
+    <h1>Свежие продукты для кафе, ресторанов и производств — <em>от одного поставщика</em></h1>
+    <div class="ctas"><a class="btn btn-g">Сделать первый заказ<svg class="i"><use href="#arrow"/></svg></a><a class="btn ghost"><svg class="i"><use href="#dl"/></svg>Скачать прайс</a></div>
+  </div>
+  <div class="stats"><div><b>1 000+</b><span>наименований</span></div><div><b>5 дней</b><span>в неделю, пн–пт</span></div><div><b>15 000 ₽</b><span>минимальный заказ</span></div></div>
+  <div class="mini glass"><div class="ic"><svg class="i"><use href="#truck"/></svg></div><div><b>Доставка завтра</b><span>Москва и область</span></div></div>
+  <div class="marq"><span class="f">Мясо и птица</span><i>✦</i><span>Рыба и морепродукты</span><i>✦</i><span class="f">Сыры</span><i>✦</i><span>Фрукты, овощи</span><i>✦</i><span class="f">Молочная гастрономия</span></div>
+</section>
+<script>document.body.dataset.v=(location.search.match(/v=(\w)/)||[])[1]||'a'</script>
+</body></html>
