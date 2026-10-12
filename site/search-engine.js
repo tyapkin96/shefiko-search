@@ -154,6 +154,7 @@ function item(p){
   '<div class="t-site-search-dm__result__product_text"><div class="t-site-search-dm__result__product_title t-name t-name_xs">'+esc(p.t)+'</div>'+
   (pr?'<div class="t-site-search-dm__result__product_price t-descr t-descr_xs">'+pr+'</div>':'')+'</div></a></div>';
 }
+window.sfSearch=function(q){if(!P)return null;try{return search(q).r.map(function(x){return x.p;});}catch(e){return null;}};
 function bind(inp){
  if(inp.getAttribute('data-sf'))return;inp.setAttribute('data-sf','1');
  var host=inp.closest('.t838__blockinput')||inp.parentNode;
