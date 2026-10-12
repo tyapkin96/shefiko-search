@@ -1,0 +1,26 @@
+name: Fetch assets
+on: workflow_dispatch
+permissions:
+  contents: write
+jobs:
+  f:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: |
+          mkdir -p tmp_assets && cd tmp_assets
+          for u in \
+           https://static.tildacdn.com/tild3331-3765-4263-b334-653665643133/Group_4.svg \
+           https://static.tildacdn.com/tild3734-3961-4362-b035-343938356331/Group_10.svg \
+           https://static.tildacdn.com/tild3736-3033-4730-b935-353032396230/Group_2089344548.svg \
+           https://static.tildacdn.com/tild6338-3264-4464-a262-323963396536/photo.webp \
+           https://static.tildacdn.com/tild3264-3232-4462-a262-386261366663/d1e7a970-7e99-4f94-a.png ; do
+            curl -sL --compressed "$u" -o "$(basename $u)" || true
+          done
+          ls -la
+      - run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -f tmp_assets
+          git commit -m "tmp assets" || exit 0
+          git push
