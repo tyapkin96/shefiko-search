@@ -38,3 +38,6 @@
 
 /* значок скачивания — поверх плашки */
 :is(#rec1656705211,#rec1656713361) .t396__elem[data-elem-id="1753356021400"]{ z-index:6 !important; }
+/* меню не должно быть полупрозрачным */
+:is(#rec1656705211,#rec1656713361) .t396__elem[data-elem-type="button"]:not([data-elem-id="1753355192457"]),
+:is(#rec1656705211,#rec1656713361) .t396__elem[data-elem-type="button"]:not([data-elem-id="1753355192457"]) .tn-atom{ opacity:1 !important; }
