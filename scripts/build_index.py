@@ -116,14 +116,20 @@ def fetch_part(uid):
 
 
 def part_names(uid):
+    """Названия категорий и ожидаемое число товаров: {id: (название, count)}."""
     names = {}
+
+    def walk(items):
+        for it in items or []:
+            if isinstance(it, dict) and "id" in it:
+                names[str(it["id"])] = (it.get("value", ""), it.get("count"))
+                walk(it.get("subparts"))
+
     try:
         d = api_json("getfilters", storepartuid=uid)
         for f in d.get("filters", []):
             if f.get("name") == "storepartuid":
-                for it in f.get("values", f.get("items", [])) or []:
-                    if "id" in it:
-                        names[str(it["id"])] = it.get("value", "")
+                walk(f.get("values"))
     except Exception as e:
         print("WARN: названия категорий", uid, e)
     return names
@@ -132,13 +138,17 @@ def part_names(uid):
 def main():
     parts = sorted(discover_parts())
     print("основные категории:", parts)
-    products, names = {}, {}
+    products, names, diag = {}, {}, []
     for uid in parts:
-        names.update(part_names(uid))
+        pn = part_names(uid)
+        names.update({k: v[0] for k, v in pn.items()})
         try:
-            products.update(fetch_part(uid))
+            got = fetch_part(uid)
+            products.update(got)
+            diag.append({"uid": uid, "title": pn.get(uid, ("", None))[0], "expected": pn.get(uid, ("", None))[1], "fetched": len(got)})
         except Exception as e:
             print("WARN: категория", uid, e)
+            diag.append({"uid": uid, "error": str(e)})
     cats, ci, rows = [], {}, []
     for uid, p in products.items():
         title = (p.get("title") or "").strip()
@@ -170,7 +180,7 @@ def main():
     except Exception:
         pass
     min_ok = max(100, int(old_n * 0.8))
-    status = {"generated": datetime.now(timezone.utc).isoformat(timespec="seconds"), "products": len(rows), "previous": old_n, "parts": parts}
+    status = {"generated": datetime.now(timezone.utc).isoformat(timespec="seconds"), "products": len(rows), "previous": old_n, "parts": diag}
     if len(rows) < min_ok:
         status["error"] = f"собрано {len(rows)} < {min_ok}: индекс не обновлён"
         json.dump(status, open(os.path.join(DOCS, "status.json"), "w", encoding="utf-8"), ensure_ascii=False, indent=1)
