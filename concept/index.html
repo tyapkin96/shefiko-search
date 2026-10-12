@@ -13,6 +13,7 @@ body[data-v=a] .a,body[data-v=b] .b,body[data-v=c] .c{display:block}
 svg.i{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round;flex:none}
 .wrap{position:absolute;left:140px;width:1160px}
 a{color:inherit;text-decoration:none}
+.nav a{white-space:nowrap}
 .glass{background:rgba(255,255,255,.075);backdrop-filter:blur(22px) saturate(140%);-webkit-backdrop-filter:blur(22px) saturate(140%);border:1px solid rgba(255,255,255,.15);box-shadow:0 18px 50px rgba(0,0,0,.35),inset 0 1px 0 rgba(255,255,255,.14)}
 .btn{display:inline-flex;align-items:center;gap:10px;height:48px;padding:0 20px;border-radius:14px;font-weight:600;font-size:15px;white-space:nowrap}
 .btn-g{background:linear-gradient(180deg,#8DB455,#6C9238);color:#fff;box-shadow:0 8px 24px rgba(127,166,74,.45),inset 0 1px 0 rgba(255,255,255,.35)}
@@ -33,10 +34,10 @@ a{color:inherit;text-decoration:none}
 .a .cart{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.16);color:#fff}
 .a .cart b{display:inline-grid;place-items:center;min-width:22px;height:22px;border-radius:11px;background:#fff;color:var(--ink);font-size:12px;margin-left:2px}
 .a .acc{width:48px;padding:0;justify-content:center;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.16)}
-.a .copy{top:236px;width:700px}
+.a .copy{top:232px;width:780px}
 .a .chip{display:inline-flex;align-items:center;gap:10px;height:34px;padding:0 16px 0 12px;border-radius:17px;font-size:13px;font-weight:600;color:rgba(255,255,255,.92)}
 .a .chip:before{content:"";width:8px;height:8px;border-radius:50%;background:var(--gl);box-shadow:0 0 0 4px rgba(163,214,92,.28)}
-.a h1{margin-top:22px;font-size:56px;line-height:1.06;font-weight:700;letter-spacing:-.025em}
+.a h1{margin-top:22px;font-size:54px;line-height:1.06;font-weight:700;letter-spacing:-.025em}
 .a h1 em{font-style:normal;color:var(--gl)}
 .a .sub{margin-top:20px;font-size:17px;line-height:1.5;color:rgba(255,255,255,.72);max-width:540px}
 .a .ctas{margin-top:30px;display:flex;gap:12px}
@@ -68,7 +69,7 @@ a{color:inherit;text-decoration:none}
 .b .ctas .btn{height:58px;padding:0 30px;font-size:16px;border-radius:29px}
 .b .outline{border:1.5px solid rgba(28,29,27,.2);background:transparent}
 .b .arch{position:absolute;left:800px;top:112px;width:500px;height:700px;border-radius:250px 250px 32px 32px;overflow:hidden;box-shadow:0 40px 80px rgba(60,55,40,.28)}
-.b .arch img{width:100%;height:100%;object-fit:cover;object-position:76% 50%;transform:scale(1.05)}
+.b .arch img{width:100%;height:100%;object-fit:cover;object-position:100% 50%}
 .b .arch:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,0) 55%,rgba(0,0,0,.35));}
 .b .ring{position:absolute;left:748px;top:86px;width:604px;height:752px;border-radius:302px 302px 40px 40px;border:1.5px dashed rgba(28,29,27,.22)}
 .b .badge{position:absolute;left:716px;top:560px;width:156px;height:156px;border-radius:50%;background:var(--g);color:#fff;display:grid;place-content:center;text-align:center;box-shadow:0 20px 40px rgba(108,146,56,.45);transform:rotate(-8deg)}
@@ -94,12 +95,12 @@ a{color:inherit;text-decoration:none}
 .c .btn{height:44px;border-radius:12px;font-size:14px;padding:0 18px}
 .c .ico{width:44px;padding:0;justify-content:center;border:1px solid rgba(255,255,255,.16)}
 .c .photo{position:absolute;left:760px;top:112px;width:540px;height:560px;border-radius:36px;overflow:hidden;border:1px solid rgba(255,255,255,.14);box-shadow:0 40px 90px rgba(0,0,0,.6)}
-.c .photo img{width:100%;height:100%;object-fit:cover;object-position:80% 45%}
+.c .photo img{width:100%;height:100%;object-fit:cover;object-position:100% 45%}
 .c .photo:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,0) 60%,rgba(0,0,0,.45))}
-.c .copy{top:128px;width:660px}
+.c .copy{top:128px;width:600px}
 .c .chip{display:inline-flex;align-items:center;gap:10px;height:34px;padding:0 16px 0 12px;border-radius:17px;font-size:13px;font-weight:600;border:1px solid rgba(255,255,255,.2);color:rgba(255,255,255,.9)}
 .c .chip:before{content:"";width:8px;height:8px;border-radius:50%;background:var(--gl);box-shadow:0 0 0 4px rgba(163,214,92,.28)}
-.c h1{margin-top:22px;font-size:60px;line-height:1.02;font-weight:800;letter-spacing:-.035em}
+.c h1{margin-top:22px;font-size:54px;line-height:1.02;font-weight:800;letter-spacing:-.035em}
 .c h1 em{font-style:normal;color:var(--gl)}
 .c .ctas{margin-top:30px;display:flex;gap:12px}
 .c .ctas .btn{height:56px;padding:0 28px;font-size:16px;border-radius:28px}
@@ -151,8 +152,8 @@ a{color:inherit;text-decoration:none}
     <p class="sub">Более 1 000 наименований в каталоге. Один заказ, один договор, доставка на следующий день.</p>
     <div class="ctas"><a class="btn btn-g">Сделать первый заказ<svg class="i"><use href="#arrow"/></svg></a><a class="btn ghost"><svg class="i"><use href="#dl"/></svg>Скачать прайс</a></div>
   </div>
-  <span class="tag glass" style="left:1010px;top:330px">Сыры</span>
-  <span class="tag glass" style="left:1196px;top:470px">Масла и соусы</span>
+  <span class="tag glass" style="left:1090px;top:462px">Сыры</span>
+  <span class="tag glass" style="left:1040px;top:388px">Масла и соусы</span>
   <span class="tag glass" style="left:1000px;top:610px">Овощи и зелень</span>
   <div class="wrap cards">
     <div class="card glass"><div class="ic"><svg class="i"><use href="#check"/></svg></div><div><b>Все необходимое</b><span>в одном заказе для вас</span></div></div>
@@ -166,7 +167,7 @@ a{color:inherit;text-decoration:none}
   <div class="blob"></div>
   <div class="wrap bar">
     <img src="logo-dark.svg" alt="ШЕФиКО">
-    <nav class="nav"><a>О компании</a><a>Каталог</a><a>Доставка и оплата</a><a>Контакты</a><a>Регистрация</a></nav>
+    <nav class="nav"><a>О компании</a><a>Доставка и оплата</a><a>Контакты</a><a>Регистрация</a></nav>
     <a class="btn dark"><svg class="i"><use href="#menu"/></svg>Каталог</a>
     <div class="bsearch"><svg class="i"><use href="#search"/></svg>Поиск по названию</div>
     <a class="btn" style="background:#EAF2DA;color:var(--g2)"><svg class="i"><use href="#bag"/></svg>0</a>
@@ -194,7 +195,7 @@ a{color:inherit;text-decoration:none}
   <div class="glow"></div><div class="glow2"></div>
   <div class="wrap head">
     <img src="logo-light.svg" alt="ШЕФиКО">
-    <nav class="nav"><a>О компании</a><a>Каталог продукции</a><a>Доставка и оплата</a><a>Контакты</a><a>Регистрация</a></nav>
+    <nav class="nav"><a>О компании</a><a>Доставка и оплата</a><a>Контакты</a><a>Регистрация</a></nav>
     <div class="csearch"><svg class="i"><use href="#search"/></svg>Поиск</div>
     <a class="btn btn-g"><svg class="i"><use href="#menu"/></svg>Каталог</a>
     <a class="btn ico"><svg class="i"><use href="#bag"/></svg></a>
