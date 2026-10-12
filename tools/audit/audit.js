@@ -47,7 +47,9 @@ fs.mkdirSync(OUT, { recursive: true });
     for (const r of res) { by[r.type] = by[r.type] || { n: 0, bytes: 0 }; by[r.type].n++; by[r.type].bytes += r.len; total += r.len; }
     const big = res.filter(r => r.len > 250000).sort((a, b) => b.len - a.len).slice(0, 15).map(r => [r.len, r.url.slice(0, 140)]);
     const bad = res.filter(r => r.status >= 400).map(r => [r.status, r.url.slice(0, 140)]).slice(0, 15);
-    report[name] = { tLoad, perf, info, requests: res.length, totalBytesKnown: total, byType: by, big, bad, errs, cons: cons.slice(0, 15), sections: secs.map(s => `${s.id} t${s.type} h${s.h} ${s.text}`) };
+    const fetches={};for(const r of res.filter(r=>r.type==='fetch')){let k=r.url.replace(/[?#].*$/,'').replace(/\d{6,}/g,'N').slice(0,110);fetches[k]=fetches[k]||{n:0,bytes:0};fetches[k].n++;fetches[k].bytes+=r.len}
+    const hosts={};for(const r of res){let h;try{h=new URL(r.url).host}catch(e){h='?'}hosts[h]=hosts[h]||{n:0,bytes:0};hosts[h].n++;hosts[h].bytes+=r.len}
+    report[name] = { fetches, hosts, tLoad, perf, info, requests: res.length, totalBytesKnown: total, byType: by, big, bad, errs, cons: cons.slice(0, 15), sections: secs.map(s => `${s.id} t${s.type} h${s.h} ${s.text}`) };
     await ctx.close();
   }
   fs.writeFileSync(`${OUT}/report.json`, JSON.stringify(report, null, 1));
