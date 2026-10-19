@@ -1,0 +1,240 @@
+{
+ "els": [
+  {
+   "id": "1753347315142",
+   "t": "shape",
+   "href": null,
+   "ff": "\"Times New Roman\"",
+   "fw": "400",
+   "fs": "16px",
+   "lh": "normal",
+   "c": "rgb(0, 0, 0)",
+   "bgi": "url(\"https://optim.tildacdn.com/tild6365-3739-4136-b164-353563353261/-/format/webp/61.webp\")",
+   "bg": "rgba(0, 0, 0, 0)",
+   "br": "10px",
+   "txt": "",
+   "attrs": [
+    "data-original=https://static.tildacdn.com/tild6365-3739-4136-b164-35356335",
+    "aria-label=",
+    "role=img"
+   ]
+  },
+  {
+   "id": "1753434326133",
+   "t": "shape",
+   "href": null,
+   "ff": "\"Times New Roman\"",
+   "fw": "400",
+   "fs": "16px",
+   "lh": "normal",
+   "c": "rgb(0, 0, 0)",
+   "bgi": "url(\"https://thb.tildacdn.com/tild3739-3436-4439-b931-653138393336/-/resize/20x/Frame_318.webp\")",
+   "bg": "rgba(0, 0, 0, 0)",
+   "br": "10px",
+   "txt": "   ",
+   "attrs": [
+    "data-original=https://static.tildacdn.com/tild3739-3436-4439-b931-65313839",
+    "aria-label=",
+    "role=img"
+   ]
+  },
+  {
+   "id": "1753347315152",
+   "t": "text",
+   "href": null,
+   "ff": "Inter, Arial, sans-serif",
+   "fw": "600",
+   "fs": "45px",
+   "lh": "50px",
+   "c": "rgb(255, 255, 255)",
+   "bgi": "none",
+   "bg": "rgba(0, 0, 0, 0)",
+   "br": "0px",
+   "txt": "Сделайте первый заказ\nи оцените удобство работы",
+   "attrs": [
+    "field=tn_text_1753347315152"
+   ]
+  },
+  {
+   "id": "1753347315173",
+   "t": "text",
+   "href": null,
+   "ff": "Inter, Arial, sans-serif",
+   "fw": "400",
+   "fs": "19px",
+   "lh": "23px",
+   "c": "rgb(255, 255, 255)",
+   "bgi": "none",
+   "bg": "rgba(0, 0, 0, 0)",
+   "br": "0px",
+   "txt": "Оставьте заявку, мы свяжемся с вами, уточним детали и уже за",
+   "attrs": [
+    "field=tn_text_1753347315173"
+   ]
+  },
+  {
+   "id": "1753347315181",
+   "t": "text",
+   "href": null,
+   "ff": "Inter, Arial, sans-serif",
+   "fw": "300",
+   "fs": "19px",
+   "lh": "29px",
+   "c": "rgb(208, 209, 209)",
+   "bgi": "none",
+   "bg": "rgba(0, 0, 0, 0)",
+   "br": "0px",
+   "txt": "Всем новым клиентам — скидка 10% на первый заказ!",
+   "attrs": [
+    "field=tn_text_1753347315181"
+   ]
+  },
+  {
+   "id": "1753347315193",
+   "t": "button",
+   "href": "#form",
+   "ff": "Inter, Arial, sans-serif",
+   "fw": "500",
+   "fs": "20px",
+   "lh": "31px",
+   "c": "rgb(255, 255, 255)",
+   "bgi": "linear-gradient(0.469turn, rgb(125, 161, 82) 50%, rgb(103, 142, 57) 100%)",
+   "bg": "rgba(0, 0, 0, 0)",
+   "br": "10px",
+   "txt": "Сделать первый заказ",
+   "attrs": [
+    "href=#form",
+    "role=button",
+    "aria-haspopup=dialog"
+   ]
+  },
+  {
+   "id": "1753347315198",
+   "t": "text",
+   "href": null,
+   "ff": "Inter, Arial, sans-serif",
+   "fw": "400",
+   "fs": "18px",
+   "lh": "28px",
+   "c": "rgb(255, 255, 255)",
+   "bgi": "none",
+   "bg": "rgba(0, 0, 0, 0)",
+   "br": "0px",
+   "txt": "Или просто позвоните нам по телефону:",
+   "attrs": [
+    "field=tn_text_1753347315198"
+   ]
+  },
+  {
+   "id": "1753347315212",
+   "t": "text",
+   "href": "tel:+79661574661",
+   "ff": "Inter, Arial, sans-serif",
+   "fw": "600",
+   "fs": "23px",
+   "lh": "36px",
+   "c": "rgb(255, 255, 255)",
+   "bgi": "none",
+   "bg": "rgba(0, 0, 0, 0)",
+   "br": "0px",
+   "txt": "8 (966) 157-46-61",
+   "attrs": []
+  },
+  {
+   "id": "1753347315224",
+   "t": "vector",
+   "href": null,
+   "ff": "\"Times New Roman\"",
+   "fw": "400",
+   "fs": "16px",
+   "lh": "normal",
+   "c": "rgb(0, 0, 0)",
+   "bgi": "none",
+   "bg": "rgba(0, 0, 0, 0)",
+   "br": "0px",
+   "txt": "",
+   "attrs": []
+  }
+ ],
+ "popups": [
+  {
+   "href": null,
+   "hook": "#zeropopup",
+   "txt": "    #rec4215602701 .t396__artb"
+  },
+  {
+   "href": "#popup:docs",
+   "hook": null,
+   "txt": "Запросить документы"
+  },
+  {
+   "href": null,
+   "hook": "#form",
+   "txt": "           @media screen and ("
+  },
+  {
+   "href": null,
+   "hook": "#popup:docs",
+   "txt": "           @media screen and ("
+  },
+  {
+   "href": null,
+   "hook": "#menuopen",
+   "txt": "О компании\nКаталог продукции\nД"
+  },
+  {
+   "href": null,
+   "hook": "#lk-reg",
+   "txt": "           @media screen and ("
+  },
+  {
+   "href": null,
+   "hook": "#lk",
+   "txt": "           #rec1814119001 .t-p"
+  }
+ ],
+ "forms": [
+  {
+   "cls": "t-popup t-popup-anim-fadein t-popup-transition",
+   "id": "",
+   "hook": "#zeropopup"
+  },
+  {
+   "cls": "t-popup",
+   "id": "",
+   "hook": "#form"
+  },
+  {
+   "cls": "t-form js-form-proccess t-form_inputs-total_4 ",
+   "id": "form1184418811",
+   "hook": null
+  },
+  {
+   "cls": "t-popup",
+   "id": "",
+   "hook": "#popup:docs"
+  },
+  {
+   "cls": "t-form js-form-proccess t-form_inputs-total_3 ",
+   "id": "form4228290601",
+   "hook": null
+  },
+  {
+   "cls": "t-form js-form-proccess t-form_inputs-total_4 ",
+   "id": "form1185589086",
+   "hook": null
+  },
+  {
+   "cls": "t-popup",
+   "id": "",
+   "hook": "#lk-reg"
+  },
+  {
+   "cls": "t-form js-form-proccess t-form_inputs-total_6 ",
+   "id": "form1814075231",
+   "hook": null
+  }
+ ],
+ "bodyFont": "\"Times New Roman\"",
+ "heading": "<div class=\"tn-atom\" field=\"tn_text_1753347315152\" style=\"--lh-px: 50px; line-height: 50px;\">Сделайте первый заказ<br>и оцените удобство работы</div>"
+}
