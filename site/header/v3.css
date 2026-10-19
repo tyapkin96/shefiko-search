@@ -47,14 +47,13 @@
 #rec1656713361 .t396__elem[data-elem-id="1753355192439"] .tn-atom:hover::before{ background:rgba(163,214,92,.3); border-color:rgba(127,166,74,.8); }
 #rec1656713361 .t396__elem[data-elem-id="1753356021400"] :is(.tn-atom,.tn-atom__img){ filter:brightness(0) !important; }
 
-/* === «Каталог» — яркая кнопка === */
+/* === «Каталог» — фирменный зелёный остаётся, меняется только форма и свечение === */
 :is(#rec1656705211,#rec1656713361) .t396__elem[data-elem-id="1753355192457"] .tn-atom{
-  background:linear-gradient(180deg,#B9E96F 0%,#92CA4C 100%) !important; border:0 !important; border-radius:999px !important;
-  box-shadow:0 12px 28px rgba(146,202,76,.38), inset 0 1px 0 rgba(255,255,255,.55) !important; transition:transform .2s ease, box-shadow .2s ease, filter .2s ease;
+  border:0 !important; border-radius:999px !important;
+  box-shadow:0 12px 28px rgba(127,166,74,.42), inset 0 1px 0 rgba(255,255,255,.3) !important; transition:transform .2s ease, box-shadow .2s ease, filter .2s ease;
 }
-:is(#rec1656705211,#rec1656713361) .t396__elem[data-elem-id="1753355192457"] .tn-atom:hover{ transform:translateY(-2px); filter:brightness(1.05); box-shadow:0 18px 36px rgba(146,202,76,.5), inset 0 1px 0 rgba(255,255,255,.6) !important; }
-:is(#rec1656705211,#rec1656713361) .t396__elem[data-elem-id="1753355421289"] :is(.tn-atom,.tn-atom *){ color:#12140D !important; font-weight:700 !important; letter-spacing:.01em; }
-:is(#rec1656705211,#rec1656713361) .t396__elem[data-elem-id="1753355476514"] :is(.tn-atom,.tn-atom__img){ filter:brightness(0) !important; }
+:is(#rec1656705211,#rec1656713361) .t396__elem[data-elem-id="1753355192457"] .tn-atom:hover{ transform:translateY(-2px); filter:brightness(1.06); box-shadow:0 18px 36px rgba(127,166,74,.55), inset 0 1px 0 rgba(255,255,255,.4) !important; }
+:is(#rec1656705211,#rec1656713361) .t396__elem[data-elem-id="1753355421289"] :is(.tn-atom,.tn-atom *){ font-weight:700 !important; letter-spacing:.01em; }
 
 /* === поиск + корзина + кабинет — одна планка === */
 :is(#rec1656705211,#rec1656713361) .t396__elem[data-elem-id="1753355192462"] .tn-atom{ position:relative !important; background:transparent !important; border:0 !important; box-shadow:none !important; overflow:visible !important; opacity:1 !important; }
