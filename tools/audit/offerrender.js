@@ -1,7 +1,7 @@
 const { chromium, devices } = require('playwright'); const fs = require('fs');
 fs.mkdirSync('hdr14', { recursive: true });
 const html = fs.readFileSync('site/blocks/offer.html', 'utf8');
-const inject = html => { const rec = document.getElementById('rec1181960346'); const d = document.createElement('div'); d.id = 'sf-offer-mount'; d.innerHTML = html; rec.style.display = 'none'; rec.parentNode.insertBefore(d, rec); const s = d.querySelectorAll('script'); s.forEach(o => { const n = document.createElement('script'); n.text = o.text; o.replaceWith(n); }); d.style.padding = '60px 0'; return true; };
+const inject = html => { const rec = document.getElementById('rec1181960346'); const d = document.createElement('div'); d.id = 'sf-offer-mount'; d.innerHTML = html; rec.style.display = 'none'; rec.parentNode.insertBefore(d, rec); const s = d.querySelectorAll('script'); s.forEach(o => { const n = document.createElement('script'); n.text = o.text; o.replaceWith(n); }); d.style.padding = '0'; return true; };
 (async () => {
   const b = await chromium.launch(); const out = {};
   for (const [name, ctxOpts] of [['desktop', { viewport: { width: 1440, height: 900 } }], ['mobile', { ...devices['iPhone 14'] }], ['tablet', { viewport: { width: 900, height: 900 } }]]) {
