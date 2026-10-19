@@ -26,10 +26,7 @@
 }
 #rec1181862091 .t396__elem[data-elem-id="1753345117001"] .tn-atom:hover{ box-shadow:0 22px 46px rgba(127,166,74,.45) !important; filter:brightness(1.05); }
 
-/* --- бренды: единый спокойный вид, цвет при наведении --- */
-.shefiko-brands{ padding-bottom:6px !important; }
-.shefiko-brand img{ filter:grayscale(1) contrast(1.05); opacity:.72; transition:filter .3s ease, opacity .3s ease, transform .25s ease !important; }
-.shefiko-brand:hover img{ filter:none; opacity:1; }
+/* --- бренды: убираем лишний пустой промежуток под строкой логотипов (сами логотипы не трогаем) --- */
 #rec1181903041{ margin-top:-52px; }
 
 /* --- «Уже более 5 лет»: вторая строка заголовка выравнивается по первой --- */
