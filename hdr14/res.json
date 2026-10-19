@@ -1,0 +1,29 @@
+{
+ "desktop": {
+  "y": 3831.390625,
+  "h": 895.28125,
+  "sw": 1440,
+  "cw": 1440
+ },
+ "popup": {
+  "shown": true,
+  "disp": "block",
+  "hasFn": "function"
+ },
+ "copied": {
+  "cls": "sf-offer__tel is-copied",
+  "hash": "https://shefiko.ru/"
+ },
+ "mobile": {
+  "y": 3104.1875,
+  "h": 1055.75,
+  "sw": 390,
+  "cw": 390
+ },
+ "tablet": {
+  "y": 5175.390625,
+  "h": 856.09375,
+  "sw": 900,
+  "cw": 900
+ }
+}
