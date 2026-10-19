@@ -1,0 +1,74 @@
+{
+ "/": {
+  "status": 200,
+  "url": "https://shefiko.ru/",
+  "v3inHtml": false,
+  "widgetDark": true,
+  "searchTheme": true,
+  "len": 1154408,
+  "lastMod": "Mon, 19 Oct 2026 08:58:39 GMT",
+  "cache": null,
+  "v3inDom": true,
+  "headerRec": "rec1656705211"
+ },
+ "/catalog": {
+  "status": 200,
+  "url": "https://shefiko.ru/catalog",
+  "v3inHtml": false,
+  "widgetDark": true,
+  "searchTheme": true,
+  "len": 705819,
+  "lastMod": "Mon, 19 Oct 2026 08:58:41 GMT",
+  "cache": null,
+  "v3inDom": true,
+  "headerRec": "rec1656713361"
+ },
+ "/catalog/": {
+  "status": 200,
+  "url": "https://shefiko.ru/catalog/",
+  "v3inHtml": false,
+  "widgetDark": true,
+  "searchTheme": true,
+  "len": 705819,
+  "lastMod": "Mon, 19 Oct 2026 08:58:41 GMT",
+  "cache": null,
+  "v3inDom": true,
+  "headerRec": "rec1656713361"
+ },
+ "/catalog/myaso-i-ptitsa": {
+  "status": 200,
+  "url": "https://shefiko.ru/catalog/myaso-i-ptitsa",
+  "v3inHtml": false,
+  "widgetDark": true,
+  "searchTheme": true,
+  "len": 641487,
+  "lastMod": "Mon, 19 Oct 2026 08:58:51 GMT",
+  "cache": null,
+  "v3inDom": true,
+  "headerRec": "rec1656713361"
+ },
+ "/catalog/syry": {
+  "status": 200,
+  "url": "https://shefiko.ru/catalog/syry",
+  "v3inHtml": false,
+  "widgetDark": true,
+  "searchTheme": true,
+  "len": 627704,
+  "lastMod": "Mon, 19 Oct 2026 08:58:50 GMT",
+  "cache": null,
+  "v3inDom": true,
+  "headerRec": "rec1656713361"
+ },
+ "/privacy": {
+  "status": 200,
+  "url": "https://shefiko.ru/privacy",
+  "v3inHtml": false,
+  "widgetDark": false,
+  "searchTheme": true,
+  "len": 49409,
+  "lastMod": "Mon, 19 Oct 2026 08:58:44 GMT",
+  "cache": null,
+  "v3inDom": true,
+  "headerRec": null
+ }
+}
