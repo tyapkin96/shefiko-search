@@ -1,0 +1,35 @@
+{
+ "home": {
+  "url": "https://shefiko.ru/",
+  "title": "ШЕФиКО | Свежие продукты для кафе, ресторанов и производств Москвы и области - от одного поставщика с доставкой на следующий день",
+  "rec": "rec1656705211",
+  "varW": "753px",
+  "navPos": "relative",
+  "searchBg": "rgba(0, 0, 0, 0)",
+  "css": [
+   "https://shefiko.ru/custom.css?t=1792400318"
+  ]
+ },
+ "afterNav": {
+  "url": "https://shefiko.ru/catalog",
+  "title": "Каталог продукции | ШЕФиКО",
+  "rec": "rec1656713361",
+  "varW": "753px",
+  "navPos": "relative",
+  "searchBg": "rgba(0, 0, 0, 0)",
+  "css": [
+   "https://shefiko.ru/custom.css?t=1792400318"
+  ]
+ },
+ "afterNav2": {
+  "url": "https://shefiko.ru/catalog",
+  "title": "Каталог продукции | ШЕФиКО",
+  "rec": "rec1656713361",
+  "varW": "753px",
+  "navPos": "relative",
+  "searchBg": "rgba(0, 0, 0, 0)",
+  "css": [
+   "https://shefiko.ru/custom.css?t=1792400318"
+  ]
+ }
+}
