@@ -1,0 +1,78 @@
+/* ШЕФиКО · шапка v3 — только внешний вид; ссылки, тексты и положение элементов не меняются.
+   Меню — одна капсула, поиск+корзина+кабинет — одна планка, «Каталог» — яркая кнопка. */
+/* === меню: прозрачные ссылки внутри одной капсулы === */
+:is(#rec1656705211,#rec1656713361) .t396__elem[data-elem-type="button"]:not([data-elem-id="1753355192457"]) .tn-atom{
+  position:relative !important; isolation:isolate; overflow:visible !important;
+  background:transparent !important; border:0 !important; box-shadow:none !important; opacity:1 !important;
+  font-weight:500 !important; letter-spacing:.01em; white-space:nowrap;
+}
+:is(#rec1656705211,#rec1656713361) .t396__elem[data-elem-type="button"]:not([data-elem-id="1753355192457"]){ opacity:1 !important; }
+/* плашка наведения у каждого пункта */
+:is(#rec1656705211,#rec1656713361) .t396__elem[data-elem-type="button"]:not([data-elem-id="1753355192457"]) .tn-atom::after{
+  content:""; position:absolute; left:-12px; right:-12px; top:50%; height:34px; margin-top:-17px; border-radius:999px; z-index:-1; opacity:0; transition:opacity .2s ease;
+}
+:is(#rec1656705211,#rec1656713361) .t396__elem[data-elem-type="button"]:not([data-elem-id="1753355192457"]) .tn-atom:hover::after{ opacity:1; }
+/* сама капсула — за первым пунктом (при шестом пункте меняются две переменные) */
+#rec1656705211{ --sf-nav-l:22px; --sf-nav-w:753px; }
+#rec1656713361{ --sf-nav-l:22px; --sf-nav-w:753px; }
+#rec1656705211 .t396__elem[data-elem-id="1769964454411000001"] .tn-atom::before,
+#rec1656713361 .t396__elem[data-elem-id="1753355192384"] .tn-atom::before{
+  content:""; position:absolute; left:calc(-1 * var(--sf-nav-l)); width:var(--sf-nav-w); top:50%; height:46px; margin-top:-23px; border-radius:999px; z-index:-2;
+}
+/* на фото: тёмное стекло, белый текст */
+#rec1656705211 .t396__elem[data-elem-type="button"]:not([data-elem-id="1753355192457"]) :is(.tn-atom,.tn-atom *){ color:#fff !important; text-shadow:0 1px 6px rgba(0,0,0,.35); }
+#rec1656705211 .t396__elem[data-elem-id="1769964454411000001"] .tn-atom::before{
+  background:rgba(16,17,14,.55); border:1px solid rgba(255,255,255,.16); box-shadow:0 12px 32px rgba(0,0,0,.3);
+  -webkit-backdrop-filter:blur(16px) saturate(140%); backdrop-filter:blur(16px) saturate(140%);
+}
+#rec1656705211 .t396__elem[data-elem-type="button"]:not([data-elem-id="1753355192457"]) .tn-atom::after{ background:rgba(255,255,255,.16); }
+/* на белых страницах: светлая капсула, тёмный текст */
+#rec1656713361 .t396__elem[data-elem-type="button"]:not([data-elem-id="1753355192457"]) :is(.tn-atom,.tn-atom *){ color:#1C1D1B !important; }
+#rec1656713361 .t396__elem[data-elem-id="1753355192384"] .tn-atom::before{ background:#F3F2EE; border:1px solid rgba(28,29,27,.07); }
+#rec1656713361 .t396__elem[data-elem-type="button"]:not([data-elem-id="1753355192457"]) .tn-atom::after{ background:rgba(127,166,74,.2); }
+
+/* === «Скачать прайс» — контурная кнопка === */
+:is(#rec1656705211,#rec1656713361) .t396__elem[data-elem-id="1753355192439"] .tn-atom{ position:relative !important; isolation:isolate; overflow:visible !important; white-space:nowrap; font-weight:600 !important; }
+:is(#rec1656705211,#rec1656713361) .t396__elem[data-elem-id="1753355192439"] .tn-atom::before{
+  content:""; position:absolute; left:-30px; right:-16px; top:50%; height:46px; margin-top:-23px; border-radius:999px; z-index:-1; transition:background-color .2s ease, border-color .2s ease;
+}
+:is(#rec1656705211,#rec1656713361) .t396__elem[data-elem-id="1753356021400"]{ z-index:6 !important; }
+#rec1656705211 .t396__elem[data-elem-id="1753355192439"], #rec1656705211 .t396__elem[data-elem-id="1753356021400"]{ transform:translateY(-2px); }
+#rec1656705211 .t396__elem[data-elem-id="1753355192439"] :is(.tn-atom,.tn-atom *){ color:#fff !important; text-shadow:0 1px 6px rgba(0,0,0,.35); }
+#rec1656705211 .t396__elem[data-elem-id="1753355192439"] .tn-atom::before{ background:rgba(255,255,255,.06); border:1px solid rgba(255,255,255,.5); -webkit-backdrop-filter:blur(10px); backdrop-filter:blur(10px); }
+#rec1656705211 .t396__elem[data-elem-id="1753355192439"] .tn-atom:hover::before{ background:rgba(255,255,255,.2); border-color:#fff; }
+#rec1656705211 .t396__elem[data-elem-id="1753356021400"] :is(.tn-atom,.tn-atom__img){ filter:brightness(0) invert(1) !important; }
+#rec1656713361 .t396__elem[data-elem-id="1753355192439"] :is(.tn-atom,.tn-atom *){ color:#1C1D1B !important; }
+#rec1656713361 .t396__elem[data-elem-id="1753355192439"] .tn-atom::before{ background:transparent; border:1px solid rgba(28,29,27,.22); }
+#rec1656713361 .t396__elem[data-elem-id="1753355192439"] .tn-atom:hover::before{ background:rgba(163,214,92,.3); border-color:rgba(127,166,74,.8); }
+#rec1656713361 .t396__elem[data-elem-id="1753356021400"] :is(.tn-atom,.tn-atom__img){ filter:brightness(0) !important; }
+
+/* === «Каталог» — яркая кнопка === */
+:is(#rec1656705211,#rec1656713361) .t396__elem[data-elem-id="1753355192457"] .tn-atom{
+  background:linear-gradient(180deg,#B9E96F 0%,#92CA4C 100%) !important; border:0 !important; border-radius:999px !important;
+  box-shadow:0 12px 28px rgba(146,202,76,.38), inset 0 1px 0 rgba(255,255,255,.55) !important; transition:transform .2s ease, box-shadow .2s ease, filter .2s ease;
+}
+:is(#rec1656705211,#rec1656713361) .t396__elem[data-elem-id="1753355192457"] .tn-atom:hover{ transform:translateY(-2px); filter:brightness(1.05); box-shadow:0 18px 36px rgba(146,202,76,.5), inset 0 1px 0 rgba(255,255,255,.6) !important; }
+:is(#rec1656705211,#rec1656713361) .t396__elem[data-elem-id="1753355421289"] :is(.tn-atom,.tn-atom *){ color:#12140D !important; font-weight:700 !important; letter-spacing:.01em; }
+:is(#rec1656705211,#rec1656713361) .t396__elem[data-elem-id="1753355476514"] :is(.tn-atom,.tn-atom__img){ filter:brightness(0) !important; }
+
+/* === поиск + корзина + кабинет — одна планка === */
+:is(#rec1656705211,#rec1656713361) .t396__elem[data-elem-id="1753355192462"] .tn-atom{ position:relative !important; background:transparent !important; border:0 !important; box-shadow:none !important; overflow:visible !important; opacity:1 !important; }
+:is(#rec1656705211,#rec1656713361) .t396__elem[data-elem-id="1753355192462"] .tn-atom::before{
+  content:""; position:absolute; left:0; top:0; bottom:0; right:-293px; border-radius:999px; z-index:-1;
+}
+:is(#rec1656705211,#rec1656713361) .t396__elem[data-elem-id="1753355192462"]{ opacity:1 !important; }
+#rec1656705211 .t396__elem[data-elem-id="1753355192462"] .tn-atom::before{ background:#fff; box-shadow:0 16px 44px rgba(0,0,0,.34); }
+#rec1656713361 .t396__elem[data-elem-id="1753355192462"] .tn-atom::before{ background:#F3F2EE; border:1px solid rgba(28,29,27,.07); }
+:is(#rec1656705211,#rec1656713361) .t396__elem:is([data-elem-id="1753355192509"],[data-elem-id="1753355192551"]){ opacity:1 !important; }
+:is(#rec1656705211,#rec1656713361) .t396__elem:is([data-elem-id="1753355192509"],[data-elem-id="1753355192551"]) .tn-atom{
+  position:relative !important; background:transparent !important; border:0 !important; box-shadow:none !important; border-radius:999px !important; overflow:visible !important; opacity:1 !important; transition:background-color .2s ease;
+}
+:is(#rec1656705211,#rec1656713361) .t396__elem:is([data-elem-id="1753355192509"],[data-elem-id="1753355192551"]) .tn-atom:hover{ background:rgba(127,166,74,.14) !important; }
+:is(#rec1656705211,#rec1656713361) .t396__elem:is([data-elem-id="1753355192509"],[data-elem-id="1753355192551"]) .tn-atom::after{
+  content:""; position:absolute; left:-9px; top:15px; bottom:15px; width:1px; background:rgba(28,29,27,.12); pointer-events:none;
+}
+:is(#rec1656705211,#rec1656713361) .t396__elem[data-elem-id="1753355192531"] .tn-atom{ white-space:nowrap !important; font-weight:600 !important; color:#1C1D1B !important; }
+:is(#rec1656705211,#rec1656713361) .t838__input{ color:#1C1D1B !important; }
+:is(#rec1656705211,#rec1656713361) .t838__input::placeholder{ color:rgba(28,29,27,.58) !important; opacity:1 !important; }
+:is(#rec1656705211,#rec1656713361) .t838__search-icon{ filter:brightness(0) !important; opacity:.7; }
