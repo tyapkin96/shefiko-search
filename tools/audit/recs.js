@@ -1,19 +1,18 @@
 const { chromium } = require('playwright'); const fs = require('fs');
 fs.mkdirSync('hdr7', { recursive: true });
 (async () => {
-  const b = await chromium.launch(); const ctx = await b.newContext({ viewport: { width: 1440, height: 900 }, locale: 'ru-RU' });
-  const p = await ctx.newPage(); const out = {};
-  const probe = () => { const found = {}; document.querySelectorAll('.t396__elem[data-elem-id="1753355192457"], .t396__elem[data-elem-id="1753355192462"], .t396__elem[data-elem-id="1753355192551"]').forEach(e => { const r = e.closest('.t-rec'); if (r) found[r.id] = (found[r.id] || 0) + 1; });
-    const navs = {}; document.querySelectorAll('.t396__elem[data-elem-type="button"]').forEach(e => { const t = (e.innerText || '').trim(); if (/^(О компании|Каталог продукции|Контакты)$/.test(t)) { const r = e.closest('.t-rec'); if (r) { navs[r.id] = navs[r.id] || []; navs[r.id].push(e.getAttribute('data-elem-id')); } } });
-    return { found, navs }; };
-  const seen = new Set(); const queue = ['/', '/catalog'];
-  await p.goto('https://shefiko.ru/', { waitUntil: 'load', timeout: 90000 }); await p.waitForTimeout(2000);
-  const links = await p.evaluate(() => [...new Set([...document.querySelectorAll('a[href]')].map(a => a.getAttribute('href')).filter(h => h && h.startsWith('/') && !h.startsWith('//') && !h.includes('tproduct')).map(h => h.split('#')[0]).filter(h => h && h.length > 1))]);
-  for (const l of links) queue.push(l);
-  await p.goto('https://shefiko.ru/catalog', { waitUntil: 'load', timeout: 90000 }); await p.waitForTimeout(2000);
-  const cl = await p.evaluate(() => [...new Set([...document.querySelectorAll('a[href]')].map(a => a.getAttribute('href')).filter(h => h && h.startsWith('/catalog') && !h.includes('tproduct')).map(h => h.split('#')[0]))]);
-  for (const l of cl.slice(0, 12)) queue.push(l);
-  for (const u of queue) { if (seen.has(u) || seen.size > 40) continue; seen.add(u);
-    try { await p.goto('https://shefiko.ru' + u, { waitUntil: 'load', timeout: 60000 }); await p.waitForTimeout(1500); out[u] = await p.evaluate(probe); } catch (e) { out[u] = 'ERR ' + e.message.slice(0, 60); } }
+  const b = await chromium.launch(); const out = {};
+  const urls = ['/', '/catalog', '/catalog/', '/catalog/myaso-i-ptitsa', '/catalog/syry', '/privacy'];
+  for (const u of urls) {
+    const p = await (await b.newContext({ viewport: { width: 1440, height: 900 }, locale: 'ru-RU' })).newPage();
+    const res = await p.goto('https://shefiko.ru' + u, { waitUntil: 'load', timeout: 60000 }); await p.waitForTimeout(2500);
+    const html = await res.text();
+    out[u] = { status: res.status(), url: p.url(), v3inHtml: html.includes('--sf-nav-w'), widgetDark: html.includes('t-search-widget__close-icon'), searchTheme: html.includes('sf-home') || html.includes('t838__input'), len: html.length,
+      lastMod: res.headers()['last-modified'] || null, cache: res.headers()['cache-control'] || null,
+      v3inDom: await p.evaluate(() => [...document.styleSheets].some(s => { try { return [...s.cssRules].some(r => r.cssText.includes('--sf-nav-w')); } catch (e) { return false; } })),
+      headerRec: await p.evaluate(() => { const e = document.querySelector('.t396__elem[data-elem-id="1753355192457"]'); return e ? e.closest('.t-rec').id : null; }) };
+    if (u === '/catalog') await p.screenshot({ path: 'hdr7/catalog.jpg', type: 'jpeg', quality: 80, clip: { x: 0, y: 0, width: 1440, height: 260 } });
+    await p.close();
+  }
   fs.writeFileSync('hdr7/recs.json', JSON.stringify(out, null, 1)); await b.close();
 })();
