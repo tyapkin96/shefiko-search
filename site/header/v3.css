@@ -76,3 +76,7 @@
 :is(#rec1656705211,#rec1656713361) .t838__input{ color:#1C1D1B !important; }
 :is(#rec1656705211,#rec1656713361) .t838__input::placeholder{ color:rgba(28,29,27,.58) !important; opacity:1 !important; }
 :is(#rec1656705211,#rec1656713361) .t838__search-icon{ filter:brightness(0) !important; opacity:.7; }
+
+/* декоративные подложки не перехватывают клики */
+:is(#rec1656705211,#rec1656713361) .tn-atom::before,
+:is(#rec1656705211,#rec1656713361) .tn-atom::after{ pointer-events:none; }
