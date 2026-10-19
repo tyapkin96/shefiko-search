@@ -1,0 +1,33 @@
+/* ШЕФиКО · блоки главной v2 — только внешний вид, тексты и ссылки не меняются; только для компьютера (от 1200 px) */
+@media (min-width:1200px){
+
+/* --- плитки категорий --- */
+#rec1181767201 .t396__elem[data-elem-type="shape"] .tn-atom{
+  border-radius:22px !important; transition:box-shadow .25s ease, filter .25s ease;
+  box-shadow:0 3px 12px rgba(28,29,27,.07) !important;
+}
+#rec1181767201 .t396__elem[data-elem-type="shape"] .tn-atom:hover{ box-shadow:0 8px 20px rgba(28,29,27,.15) !important; filter:saturate(1.08); }
+/* «Весь каталог»: плитка остаётся прежней, подпись и стрелка становятся заметнее */
+#rec1181767201 .t396__elem[data-elem-id="1753342955384"] :is(.tn-atom,.tn-atom *){ color:#1C1D1B !important; font-weight:700 !important; }
+#rec1181767201 .t396__elem[data-elem-id="1753343408467"] :is(.tn-atom,.tn-atom *){ filter:brightness(0) !important; opacity:.9; }
+
+/* --- полоса «Скачать прайс» --- */
+#rec1181862091 .t396__elem[data-elem-id="1753345117001"] .tn-atom{
+  border-radius:22px !important; transition:filter .25s ease;
+}
+#rec1181862091 .t396__elem[data-elem-id="1753345117001"] .tn-atom:hover{ filter:brightness(1.06); }
+
+/* --- четыре карточки преимуществ --- */
+#rec1181939976 .t396__elem[data-elem-type="shape"]:is([data-elem-id="1753346932216"],[data-elem-id="1753346932322"],[data-elem-id="1753346932380"],[data-elem-id="1753346932442"]) .tn-atom{
+  background:#F6F8F1 !important; border:1px solid rgba(127,166,74,.18) !important; border-radius:24px !important; transition:border-color .25s ease, background-color .25s ease;
+}
+#rec1181939976 .t396__elem[data-elem-type="shape"]:is([data-elem-id="1753346932216"],[data-elem-id="1753346932322"],[data-elem-id="1753346932380"],[data-elem-id="1753346932442"]) .tn-atom:hover{
+  border-color:rgba(127,166,74,.6) !important; background:#F1F6E7 !important;
+}
+#rec1181939976 .t396__elem[data-elem-type="shape"]:is([data-elem-id="1753346932268"],[data-elem-id="1753346932362"],[data-elem-id="1753346932419"],[data-elem-id="1753346932494"]) .tn-atom{
+  background:linear-gradient(135deg,#DDEBC4 0%,#C6DEA1 100%) !important; border-radius:18px !important;
+}
+#rec1181939976 .t396__elem[data-elem-type="image"]{ transform:scale(1.45); }
+#rec1181939976 .t396__elem[data-elem-type="text"]:is([data-elem-id="1753346932230"],[data-elem-id="1753346932335"],[data-elem-id="1753346932395"],[data-elem-id="1753346932456"]) .tn-atom{ font-weight:700 !important; letter-spacing:-.01em; }
+
+}

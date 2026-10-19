@@ -1,6 +1,6 @@
 const { chromium } = require('playwright'); const fs = require('fs');
 fs.mkdirSync('hdr11', { recursive: true });
-const css = fs.readFileSync('site/blocks/v1.css', 'utf8');
+const css = fs.readFileSync('site/blocks/v2.css', 'utf8');
 const groups = { a_cards: ['rec1181746166'], b_cat: ['rec1181767201', 'rec1181862091'], c_brands: ['rec4276894201', 'rec1181903041'], d_benefits: ['rec1181939976'], e_faq: ['rec1182124861', 'rec1182129806'] };
 (async () => {
   const b = await chromium.launch(); const p = await (await b.newContext({ viewport: { width: 1440, height: 900 }, locale: 'ru-RU' })).newPage();
