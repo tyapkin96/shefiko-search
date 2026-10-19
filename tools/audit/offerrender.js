@@ -1,7 +1,7 @@
 const { chromium, devices } = require('playwright'); const fs = require('fs');
 fs.mkdirSync('hdr14', { recursive: true });
 const html = fs.readFileSync('site/blocks/offer.html', 'utf8');
-const inject = html => { const rec = document.getElementById('rec1181960346'); const d = document.createElement('div'); d.id = 'sf-offer-mount'; d.innerHTML = html; rec.style.display = 'none'; rec.parentNode.insertBefore(d, rec); const s = d.querySelectorAll('script'); s.forEach(o => { const n = document.createElement('script'); n.text = o.text; o.replaceWith(n); }); d.style.padding = '0'; return true; };
+const inject = html => { const live = document.querySelector('.sf-offer'); if (live) { const holder = live.closest('.t-rec') || live.parentElement; const old = holder.querySelector('.t123') || live.parentElement; const d0 = document.createElement('div'); d0.id = 'sf-offer-mount'; old.style.display = 'none'; old.parentNode.insertBefore(d0, old); d0.innerHTML = html; d0.querySelectorAll('script').forEach(o => { const n = document.createElement('script'); n.text = o.text; o.replaceWith(n); }); return true; }  const rec = document.getElementById('rec1181960346'); const d = document.createElement('div'); d.id = 'sf-offer-mount'; d.innerHTML = html; rec.style.display = 'none'; rec.parentNode.insertBefore(d, rec); const s = d.querySelectorAll('script'); s.forEach(o => { const n = document.createElement('script'); n.text = o.text; o.replaceWith(n); }); d.style.padding = '0'; return true; };
 (async () => {
   const b = await chromium.launch(); const out = {};
   for (const [name, ctxOpts] of [['desktop', { viewport: { width: 1440, height: 900 } }], ['mobile', { ...devices['iPhone 14'] }], ['tablet', { viewport: { width: 900, height: 900 } }]]) {
@@ -10,7 +10,7 @@ const inject = html => { const rec = document.getElementById('rec1181960346'); c
     const h = await p.evaluate(() => document.documentElement.scrollHeight);
     for (let y = 0; y < h; y += 500) { await p.evaluate(v => window.scrollTo(0, v), y); await p.waitForTimeout(150); }
     await p.waitForTimeout(600);
-    if (name === 'desktop') { const r = await p.evaluate(() => { const e = document.getElementById('rec1181960346').getBoundingClientRect(); return { y: e.top + scrollY, h: e.height }; }); await p.screenshot({ path: 'hdr14/before-desktop.png', fullPage: true, clip: { x: 0, y: r.y, width: 1440, height: r.h } }); }
+    if (name === 'desktop') { const r = await p.evaluate(() => { const e = (document.querySelector('.sf-offer') || document.body).getBoundingClientRect(); return { y: e.top + scrollY - 200, h: e.height + 400 }; }); await p.screenshot({ path: 'hdr14/before-desktop.png', fullPage: true, clip: { x: 0, y: Math.max(0, r.y), width: 1440, height: r.h } }); }
     await p.evaluate(inject, html); await p.waitForTimeout(1500);
     const m = await p.evaluate(() => { const e = document.getElementById('sf-offer-mount'); const r = e.getBoundingClientRect(); return { y: r.top + scrollY, h: r.height, sw: document.documentElement.scrollWidth, cw: document.documentElement.clientWidth }; });
     out[name] = m;
