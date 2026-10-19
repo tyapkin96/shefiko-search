@@ -1,0 +1,11 @@
+node:internal/process/promises:391
+    triggerUncaughtException(err, true /* fromPromise */);
+    ^
+
+page.evaluate: TypeError: Cannot read properties of null (reading 'getBoundingClientRect')
+    at eval (eval at evaluate (:234:30), <anonymous>:1:59)
+    at UtilityScript.evaluate (<anonymous>:236:17)
+    at UtilityScript.<anonymous> (<anonymous>:1:44)
+    at /home/runner/work/shefiko-search/shefiko-search/tools/audit/offerrender.js:13:49
+
+Node.js v20.20.2
