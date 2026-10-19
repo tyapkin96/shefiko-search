@@ -1,0 +1,55 @@
+/* ШЕФиКО · блоки главной v1 — только внешний вид, тексты и ссылки не меняются; только для компьютера (от 1200 px) */
+@media (min-width:1200px){
+
+/* --- три карточки под первым экраном: единые скругления и мягкая тень --- */
+#rec1181746166 .t396__elem[data-elem-type="shape"] .tn-atom{
+  border-radius:22px !important; box-shadow:0 12px 34px rgba(28,29,27,.10) !important;
+}
+
+/* --- плитки категорий --- */
+#rec1181767201 .t396__elem[data-elem-type="shape"] .tn-atom{
+  border-radius:22px !important; transition:box-shadow .25s ease, filter .25s ease;
+  box-shadow:0 1px 0 rgba(28,29,27,.05), 0 8px 24px rgba(28,29,27,.06) !important;
+}
+#rec1181767201 .t396__elem[data-elem-type="shape"] .tn-atom:hover{ box-shadow:0 18px 40px rgba(28,29,27,.16) !important; filter:saturate(1.08); }
+/* «Весь каталог» — фирменная зелёная плитка */
+#rec1181767201 .t396__elem[data-elem-id="1753342955379"] .tn-atom{
+  background-image:none !important; background:linear-gradient(135deg,#8DB455 0%,#5F8A32 100%) !important;
+  box-shadow:0 18px 40px rgba(127,166,74,.38) !important;
+}
+#rec1181767201 .t396__elem[data-elem-id="1753342955384"] :is(.tn-atom,.tn-atom *){ color:#fff !important; font-weight:600 !important; }
+#rec1181767201 .t396__elem[data-elem-id="1753343408467"] :is(.tn-atom,.tn-atom *){ filter:brightness(0) invert(1) !important; background-image:none; }
+
+/* --- полоса «Скачать прайс» --- */
+#rec1181862091 .t396__elem[data-elem-id="1753345117001"] .tn-atom{
+  border-radius:22px !important; box-shadow:0 16px 38px rgba(127,166,74,.30) !important; transition:box-shadow .25s ease, filter .25s ease;
+}
+#rec1181862091 .t396__elem[data-elem-id="1753345117001"] .tn-atom:hover{ box-shadow:0 22px 46px rgba(127,166,74,.45) !important; filter:brightness(1.05); }
+
+/* --- бренды: единый спокойный вид, цвет при наведении --- */
+.shefiko-brands{ padding-bottom:6px !important; }
+.shefiko-brand img{ filter:grayscale(1) contrast(1.05); opacity:.72; transition:filter .3s ease, opacity .3s ease, transform .25s ease !important; }
+.shefiko-brand:hover img{ filter:none; opacity:1; }
+#rec1181903041{ margin-top:-52px; }
+
+/* --- «Уже более 5 лет»: вторая строка заголовка выравнивается по первой --- */
+#rec1181903041 .t396__elem[data-elem-id="1753346096608"]{ transform:translateX(-73px); }
+
+/* --- четыре карточки преимуществ --- */
+#rec1181939976 .t396__elem[data-elem-type="shape"]:is([data-elem-id="1753346932216"],[data-elem-id="1753346932322"],[data-elem-id="1753346932380"],[data-elem-id="1753346932442"]) .tn-atom{
+  background:#F6F8F1 !important; border:1px solid rgba(127,166,74,.18) !important; border-radius:24px !important; transition:border-color .25s ease, box-shadow .25s ease;
+}
+#rec1181939976 .t396__elem[data-elem-type="shape"]:is([data-elem-id="1753346932216"],[data-elem-id="1753346932322"],[data-elem-id="1753346932380"],[data-elem-id="1753346932442"]) .tn-atom:hover{
+  border-color:rgba(127,166,74,.55) !important; box-shadow:0 18px 40px rgba(127,166,74,.16) !important;
+}
+#rec1181939976 .t396__elem[data-elem-type="shape"]:is([data-elem-id="1753346932268"],[data-elem-id="1753346932362"],[data-elem-id="1753346932419"],[data-elem-id="1753346932494"]) .tn-atom{
+  background:linear-gradient(135deg,#DDEBC4 0%,#C6DEA1 100%) !important; border-radius:18px !important;
+}
+#rec1181939976 .t396__elem[data-elem-type="image"]{ transform:scale(1.45); }
+#rec1181939976 .t396__elem[data-elem-type="text"]:is([data-elem-id="1753346932230"],[data-elem-id="1753346932335"],[data-elem-id="1753346932395"],[data-elem-id="1753346932456"]) .tn-atom{ font-weight:700 !important; letter-spacing:-.01em; }
+
+/* --- «Условия оплаты и доставки»: заголовок больше не налезает на вопросы --- */
+#rec1182124861 .t396__elem[data-elem-id="1753350565607"]{ width:255px !important; }
+#rec1182124861 .t396__elem[data-elem-id="1753350565607"] .tn-atom{ white-space:normal !important; line-height:1.18 !important; }
+
+}
