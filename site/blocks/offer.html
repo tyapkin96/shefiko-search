@@ -1,0 +1,57 @@
+<!-- ШЕФиКО · продающий блок «Расчёт экономии» (вставляется в Tilda блоком T123 «HTML-код») -->
+<style>
+.sf-offer{--g1:#7DA152;--g2:#678E39;--lime:#B6DC7A;box-sizing:border-box;width:100%;max-width:1322px;margin:0 auto;padding:0 20px;font-family:Inter,Arial,sans-serif;color:#fff}
+.sf-offer *{box-sizing:border-box}
+.sf-offer__card{position:relative;overflow:hidden;border-radius:26px;padding:64px 72px;
+  background:linear-gradient(90deg,rgba(13,14,11,.96) 0%,rgba(13,14,11,.88) 44%,rgba(13,14,11,.15) 78%),url("https://optim.tildacdn.com/tild6365-3739-4136-b164-353563353261/-/format/webp/61.webp") right center/cover no-repeat,#14150f}
+.sf-offer__in{position:relative;max-width:660px}
+.sf-offer__tag{display:inline-flex;align-items:center;gap:8px;padding:8px 16px;border-radius:999px;background:rgba(182,220,122,.14);border:1px solid rgba(182,220,122,.4);color:var(--lime);font-size:14px;font-weight:600;letter-spacing:.04em;text-transform:uppercase}
+.sf-offer__h{margin:22px 0 0;font-size:46px;line-height:1.1;font-weight:700;letter-spacing:-.02em;text-wrap:balance}
+.sf-offer__h b{color:var(--lime);font-weight:700}
+.sf-offer__p{margin:20px 0 0;font-size:19px;line-height:1.5;color:#d6d8d3;max-width:560px}
+.sf-offer__steps{list-style:none;margin:34px 0 0;padding:0;display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.sf-offer__steps li{display:flex;flex-direction:column;gap:10px;padding:16px 18px;border-radius:18px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);font-size:15px;line-height:1.35;color:#eef0ea}
+.sf-offer__n{width:30px;height:30px;border-radius:50%;display:grid;place-items:center;background:linear-gradient(135deg,var(--g1),var(--g2));font-size:14px;font-weight:700;color:#fff}
+.sf-offer__perks{display:flex;flex-wrap:wrap;gap:10px 22px;margin:26px 0 0;padding:0;list-style:none;font-size:16px;color:#e6e8e2}
+.sf-offer__perks li{display:flex;align-items:center;gap:8px}
+.sf-offer__perks li:before{content:"";width:18px;height:18px;border-radius:50%;background:var(--lime) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 18 18'%3E%3Cpath d='M5 9.2l2.5 2.5L13 6.2' fill='none' stroke='%2314150f' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center/18px no-repeat;flex:none}
+.sf-offer__act{display:flex;flex-wrap:wrap;align-items:center;gap:18px 28px;margin-top:34px}
+.sf-offer__btn{display:inline-flex;align-items:center;justify-content:center;min-height:64px;padding:0 38px;border-radius:18px;background:linear-gradient(0.47turn,var(--g1) 50%,var(--g2) 100%);color:#fff;font-size:19px;font-weight:600;text-decoration:none;box-shadow:0 12px 30px rgba(125,161,82,.4),inset 0 1px 0 rgba(255,255,255,.3);transition:transform .2s ease,box-shadow .2s ease,filter .2s ease}
+.sf-offer__btn:hover{transform:translateY(-2px);filter:brightness(1.07);box-shadow:0 18px 38px rgba(125,161,82,.5),inset 0 1px 0 rgba(255,255,255,.4)}
+.sf-offer__tel{display:flex;flex-direction:column;gap:2px;color:#fff;text-decoration:none;font-size:14px;color:#c4c7c0}
+.sf-offer__tel b{font-size:23px;font-weight:600;color:#fff;letter-spacing:.01em}
+.sf-offer__tel:hover b{color:var(--lime)}
+@media (max-width:980px){.sf-offer__card{padding:44px 36px}.sf-offer__h{font-size:38px}.sf-offer__steps{grid-template-columns:1fr}.sf-offer__steps li{flex-direction:row;align-items:center;gap:14px}}
+@media (max-width:640px){.sf-offer{padding:0 12px}.sf-offer__card{padding:34px 22px;border-radius:22px;background:linear-gradient(180deg,rgba(13,14,11,.93) 0%,rgba(13,14,11,.86) 100%),url("https://optim.tildacdn.com/tild6365-3739-4136-b164-353563353261/-/format/webp/61.webp") 70% center/cover no-repeat,#14150f}.sf-offer__h{font-size:30px}.sf-offer__p{font-size:17px}.sf-offer__btn{width:100%;min-height:60px}.sf-offer__tel b{font-size:21px}}
+</style>
+<div class="sf-offer">
+  <div class="sf-offer__card">
+    <div class="sf-offer__in">
+      <span class="sf-offer__tag">Для новых клиентов</span>
+      <h2 class="sf-offer__h">Покажем, сколько вы <b>сэкономите на закупках</b> — за 24 часа</h2>
+      <p class="sf-offer__p">Пришлите список закупки или последнюю накладную — мы пересчитаем по нашим ценам и пришлём сравнение. Без обязательств.</p>
+      <ol class="sf-offer__steps">
+        <li><span class="sf-offer__n">1</span>Оставьте заявку — это минута</li>
+        <li><span class="sf-offer__n">2</span>Менеджер свяжется и возьмёт список</li>
+        <li><span class="sf-offer__n">3</span>Расчёт за 24 часа, первый заказ — с доставкой на следующий день</li>
+      </ol>
+      <ul class="sf-offer__perks">
+        <li>Минимальный заказ — от 15 000 ₽</li>
+        <li>Бонус 5% на второй заказ</li>
+      </ul>
+      <div class="sf-offer__act">
+        <a class="sf-offer__btn" href="#form" role="button">Получить расчёт экономии</a>
+        <a class="sf-offer__tel" href="tel:+79661574661"><span>Или позвоните</span><b>8 (966) 157-46-61</b></a>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+/* кнопка открывает ту же форму, что и прежняя кнопка «Сделать первый заказ» */
+(function(){document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('.sf-offer__btn');if(!a)return;
+ setTimeout(function(){var pop=document.querySelector('.t-popup[data-tooltip-hook="#form"]');if(!pop||pop.classList.contains('t-popup_show'))return;
+  var rec=pop.closest('.r,.t-rec');var id=rec&&(rec.getAttribute('data-record-type')||'');var rid=rec&&rec.id?rec.id.replace('rec',''):'';
+  try{if(typeof t390_showPopup==='function'){t390_showPopup(rid);return;}}catch(x){}
+  try{pop.classList.add('t-popup_show');pop.style.display='block';document.body.classList.add('t-body_popupshowed');}catch(x){}
+ },180);});})();
+</script>
