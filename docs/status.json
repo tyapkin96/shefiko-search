@@ -1,6 +1,6 @@
 {
- "generated": "2026-11-02T05:57:07+00:00",
- "products": 866,
+ "generated": "2026-11-02T15:43:50+00:00",
+ "products": 870,
  "previous": 866,
  "parts": [
   {
@@ -78,14 +78,14 @@
   {
    "uid": "623169659342",
    "title": "Упаковка, посуда и бытовая химия",
-   "expected": 63,
-   "fetched": 63
+   "expected": 66,
+   "fetched": 66
   },
   {
    "uid": "635322397522",
    "title": "Крупы",
-   "expected": 34,
-   "fetched": 34
+   "expected": 35,
+   "fetched": 35
   },
   {
    "uid": "705698298082",
