@@ -1,6 +1,6 @@
 {
- "generated": "2026-11-09T06:19:14+00:00",
- "products": 870,
+ "generated": "2026-11-09T16:30:45+00:00",
+ "products": 809,
  "previous": 870,
  "parts": [
   {
@@ -71,9 +71,7 @@
   },
   {
    "uid": "607069259212",
-   "title": "Мясо и птица",
-   "expected": 62,
-   "fetched": 62
+   "error": "Expecting value: line 1 column 1 (char 0)"
   },
   {
    "uid": "623169659342",
@@ -84,8 +82,8 @@
   {
    "uid": "635322397522",
    "title": "Крупы",
-   "expected": 35,
-   "fetched": 35
+   "expected": 36,
+   "fetched": 36
   },
   {
    "uid": "705698298082",
