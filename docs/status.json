@@ -1,7 +1,7 @@
 {
- "generated": "2026-11-09T16:30:45+00:00",
- "products": 809,
- "previous": 870,
+ "generated": "2026-11-10T01:29:58+00:00",
+ "products": 871,
+ "previous": 809,
  "parts": [
   {
    "uid": "151772760792",
@@ -71,7 +71,9 @@
   },
   {
    "uid": "607069259212",
-   "error": "Expecting value: line 1 column 1 (char 0)"
+   "title": "Мясо и птица",
+   "expected": 62,
+   "fetched": 62
   },
   {
    "uid": "623169659342",
