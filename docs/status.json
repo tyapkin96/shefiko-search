@@ -1,6 +1,6 @@
 {
- "generated": "2026-11-17T20:51:57+00:00",
- "products": 871,
+ "generated": "2026-11-18T07:21:57+00:00",
+ "products": 872,
  "previous": 871,
  "parts": [
   {
@@ -42,8 +42,8 @@
   {
    "uid": "351351893872",
    "title": "Шоколад и какао",
-   "expected": 16,
-   "fetched": 16
+   "expected": 17,
+   "fetched": 17
   },
   {
    "uid": "476299571752",
